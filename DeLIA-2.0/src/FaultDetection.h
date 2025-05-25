@@ -4,7 +4,6 @@
 #include <string.h>
 #include <iostream> 
 #include <signal.h>
-#include <unordered_map> // Lib usada para ajudar no Heatbeat
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -19,14 +18,10 @@
 #define PORT    8080
 #define MAXLINE 10
 
-
-
 class FaultDetection {
     private:
         static void Client();
-        // static void Server(time_t* nodes_answer);
-        static void Server(std::unordered_map<int,time_t> clients_answer);
-        static void *RunServer(void* arg);
+        static void Server(time_t* nodes_answer);
         static void *RunThread(void* id);
         static void Handler(int sig); 
     

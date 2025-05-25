@@ -18,8 +18,6 @@
 
 int main (int argc, char *argv[]) {
   
-
-std::cout << "PASSOU AQUI FDP!" << std::endl;
   int  rank, comm_sz, size, iterations;
 
   MPI_Init(&argc, &argv);

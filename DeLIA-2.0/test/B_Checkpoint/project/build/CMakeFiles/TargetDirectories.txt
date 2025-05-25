@@ -1,8 +1,0 @@
-/home/gustavo/repo/projeto-tcc/test/B_Checkpoint/project/build/CMakeFiles/libGC.dir
-/home/gustavo/repo/projeto-tcc/test/B_Checkpoint/project/build/CMakeFiles/EXEC_TEST.dir
-/home/gustavo/repo/projeto-tcc/test/B_Checkpoint/project/build/CMakeFiles/edit_cache.dir
-/home/gustavo/repo/projeto-tcc/test/B_Checkpoint/project/build/CMakeFiles/rebuild_cache.dir
-/home/gustavo/repo/projeto-tcc/test/B_Checkpoint/project/build/CMakeFiles/list_install_components.dir
-/home/gustavo/repo/projeto-tcc/test/B_Checkpoint/project/build/CMakeFiles/install.dir
-/home/gustavo/repo/projeto-tcc/test/B_Checkpoint/project/build/CMakeFiles/install/local.dir
-/home/gustavo/repo/projeto-tcc/test/B_Checkpoint/project/build/CMakeFiles/install/strip.dir

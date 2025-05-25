@@ -1,2 +1,0 @@
-/usr/bin/ar qc liblibGC.a CMakeFiles/libGC.dir/GDClass.cpp.o CMakeFiles/libGC.dir/Settings.cpp.o
-/usr/bin/ranlib liblibGC.a

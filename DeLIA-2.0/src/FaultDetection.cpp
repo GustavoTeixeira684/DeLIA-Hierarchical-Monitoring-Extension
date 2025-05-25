@@ -5,13 +5,11 @@ int fSleepThreadTime;
 bool fThreadWorking;
 int type;
 bool fSignalReceive;
-std::unordered_map<int, time_t> clients_answer;
 
 struct sWdData {
   int  id_server;
 }; typedef struct sWdData wdData;
 wdData *wd_data;
-
 
 void FaultDetection::TriggerSignal() {
     fSignalReceive= false;
@@ -51,124 +49,106 @@ void *FaultDetection::RunThread(void* data) {
     wdData *wd_data;
     wd_data = ( wdData *) data;
     
+    time_t* nodes_answer = new time_t[Utils::getComm_sz()];
     time_t now;
-
-    pthread_t wd_thread;
-    if(Utils::isServer()){
-        time(&now);
-        for (int i = 0; i < Utils::getSizeMyClient(); i++) {
-            clients_answer[Utils::getMyClient()[i]] = now;
+    time(&now);
+    for (int i = 0; i < Utils::getComm_sz(); i++) {
+        nodes_answer[i] = now;
+    }
+    
+    while (fThreadWorking) {        
+        if (Utils::getId() == 0) {
+            Server(nodes_answer);
+        } else {            
+            Client();            
+            sleep(fSleepThreadTime);            
         }
-        pthread_create(&wd_thread, NULL, RunServer, NULL);
-    }
-
-    while(fThreadWorking){
-        Client();
-        sleep(fSleepThreadTime);
-    }
-
-    if(Utils::isServer()){
-        pthread_join(wd_thread, nullptr);
-    }
-    pthread_exit(NULL);
-
-}
-
-void *FaultDetection::RunServer(void* arg){
-    while(fThreadWorking){
-        Server(clients_answer);
     }
     pthread_exit(NULL);
 }
 
 void FaultDetection::Client() {
+    
     int sockfd;
     char buffer[MAXLINE];
-    std::string message = std::to_string(Utils::getId());
-    char hello[message.size() + 1];
-    strcpy(hello, message.c_str());
+    std::string message;
     int id = Utils::getId();
-
-    
-    int portaClients = PORT + Utils::getNumServers() + 1;
-
-    
-    if ((sockfd = socket(AF_INET, SOCK_DGRAM, 0)) < 0) {
+    message = std::to_string(id);
+    char hello[message.length() + 1]; 
+ 
+    strcpy(hello, message.c_str());
+    struct sockaddr_in     servaddr;
+  
+    // Creating socket file descriptor
+    if ( (sockfd = socket(AF_INET, SOCK_DGRAM, 0)) < 0 ) {
         perror("socket creation failed");
         exit(EXIT_FAILURE);
     }
-
-    
-    int reuse = 1;
-    if (setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &reuse, sizeof(reuse)) < 0 ) {
-        perror("setsockopt SO_REUSEADDR/SO_REUSEPORT");
-        close(sockfd);
-        exit(EXIT_FAILURE);
-    }
-
-    
-    sockaddr_in cliaddr{};
-    cliaddr.sin_family      = AF_INET;
-    cliaddr.sin_addr.s_addr = INADDR_ANY;
-    cliaddr.sin_port        = htons(portaClients);
-
-    if (bind(sockfd, reinterpret_cast<sockaddr*>(&cliaddr), sizeof(cliaddr)) < 0) {
-        perror("bind to portaClients failed");
-        close(sockfd);
-        exit(EXIT_FAILURE);
-    }
-
-    
-    sockaddr_in servaddr{};
-    servaddr.sin_family      = AF_INET;
+  
+    memset(&servaddr, 0, sizeof(servaddr));
+      
+    // Filling server information
+    servaddr.sin_family = AF_INET;
+    servaddr.sin_port = htons(PORT);
     servaddr.sin_addr.s_addr = INADDR_ANY;
-    servaddr.sin_port        = htons(PORT + Utils::getMyServer());
+      
+    int n;
+    unsigned int len;
+      
+    sendto(sockfd, (const char *)hello, strlen(hello),
+        MSG_CONFIRM, (const struct sockaddr *) &servaddr, 
+            sizeof(servaddr));
 
-    int sent= sendto(sockfd, hello, strlen(hello), MSG_CONFIRM,
-           reinterpret_cast<sockaddr*>(&servaddr), sizeof(servaddr));
+    #ifdef DEBUGHEARTBEATMSG
+    std::cerr << "Observed node " << id << " send msg to Leader node" << std::endl;
+    #endif
 
-    if (sent<0){     
-        for(int retryServer=0;retryServer<3;retryServer++){
-            sent=sendto(sockfd, hello, strlen(hello), MSG_CONFIRM,
-            reinterpret_cast<sockaddr*>(&servaddr), sizeof(servaddr));            
-            if(sent >=0){
-                break;
-            }
-        }
-    }
+    struct timeval read_timeout;
+    read_timeout.tv_sec = 1;
+    read_timeout.tv_usec = 1000;
+
+    for (int i = 0; i < 3; i++) {
+        setsockopt(sockfd, SOL_SOCKET, SO_RCVTIMEO, &read_timeout, sizeof read_timeout);
     
-    struct timeval read_timeout{1, 1000};  // 1s e 1000µs
-    setsockopt(sockfd, SOL_SOCKET, SO_RCVTIMEO, &read_timeout, sizeof(read_timeout));
-
-    for (int attempt = 0; attempt < 3; ++attempt) {
-        socklen_t len = sizeof(servaddr);
-        int n = recvfrom(sockfd, buffer, MAXLINE, 0,
-                         reinterpret_cast<sockaddr*>(&servaddr), &len);
-        if (n > 0) {
-            buffer[n] = '\0';
-            int id_rcv = std::atoi(buffer);
-
+        n = recvfrom(sockfd, (char *)buffer, MAXLINE, 
+                    MSG_WAITALL, (struct sockaddr *) &servaddr, &len);
+        buffer[n] = '\0';
+        int id_rcv = atoi(buffer);
+        if (strlen(buffer) != 0) {
             if (id_rcv == Utils::getId()) {
-                // ecoa de volta se for loop de detecção de falha
-                sendto(sockfd, hello, strlen(hello), MSG_CONFIRM,
-                       reinterpret_cast<sockaddr*>(&servaddr), sizeof(servaddr));
+                
+                #ifdef DEBUGHEARTBEATMSG
+                std::cerr << "Observed node " << id  << " detected wrong" << std::endl;
+                #endif
+
+                sendto(sockfd, (const char *)hello, strlen(hello),
+                        MSG_CONFIRM, (const struct sockaddr *) &servaddr, 
+                        sizeof(servaddr));
             } else {
+                
                 #ifdef TEST
                 std::cerr << "OBSERVED_NODE_" << id  << "_RECEIVES_TRIGGER" << std::endl; 
                 std::cerr << "MSG_RECEIVED_" << id  << "_:_" << id_rcv << std::endl; 
                 #endif
+
                 Checkpointing::getInstance()->SaveLocalData();
                 break;
+                // sleep(10);
             }
+        } 
+        #ifdef DEBUGHEARTBEATMSG
+        else {
+            std::cerr << "Observed node " << id  << " do not receive any trigger" << std::endl; 
         }
-        // se timeout, repete até 3 tentativas
-    }
+        #endif
+    }    
 
     close(sockfd);
+    return;
 }
 
-// void FaultDetection::Server(time_t* nodes_answer){
-void FaultDetection::Server(std::unordered_map<int,time_t> clients_answer){
+void FaultDetection::Server(time_t* nodes_answer){
+   
     int sockfd;
     char buffer[MAXLINE];
     char hello[] = {"1"};
@@ -186,12 +166,9 @@ void FaultDetection::Server(std::unordered_map<int,time_t> clients_answer){
     // Filling server information
     servaddr.sin_family    = AF_INET; // IPv4
     servaddr.sin_addr.s_addr = INADDR_ANY;
-    servaddr.sin_port = htons(PORT+Utils::getId()); // Regra para ouvir apenas os seus clientes
-
-    int opt = 1;
-    setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt));
-    // Em Linux moderno, se precisar de múltiplos binds simultâneos:
-    setsockopt(sockfd, SOL_SOCKET, SO_REUSEPORT, &opt, sizeof(opt));
+    servaddr.sin_port = htons(PORT);
+      
+    // Bind the socket with the server address
     if ( bind(sockfd, (const struct sockaddr *)&servaddr, 
             sizeof(servaddr)) < 0 ) {
         perror("bind failed");
@@ -210,67 +187,65 @@ void FaultDetection::Server(std::unordered_map<int,time_t> clients_answer){
                 MSG_WAITALL, ( struct sockaddr *) &cliaddr,
                 &len);
 
+    buffer[n] = '\0';
     
-    int id_rcv;
+    #ifdef DEBUGHEARTBEATMSG
+    std::cerr << "Msg from the observed node :" << buffer << std::endl;
+    #endif
+    int id_rcv = atoi(buffer);
+
     time_t now;
-    if(n > 0){
-        buffer[n] = '\0';
-        #ifdef DEBUGHEARTBEATMSG
-        std::cerr << "Msg from the observed node :" << buffer << std::endl;
-        #endif
-        id_rcv = atoi(buffer);
-        time(&now);    
-        clients_answer[id_rcv] = now;
 
-    }else{
-        time(&now);
-    }
-
+	time(&now);
     
-    for(const auto& par : clients_answer){
-        if(par.first != id_rcv){
-            double diff_time = difftime(now, par.second);
+    nodes_answer[id_rcv] = now;
+    nodes_answer[Utils::getId()] = now;
+    
+    for (int i = 0; i < Utils::getComm_sz(); i++) {
+        if (i != Utils::getId() && i != id_rcv){
+            double diff_time = difftime(now, nodes_answer[i]);
             if (diff_time > fWaitingTime || fSignalReceive) {
                 #ifdef TEST
-                std::cerr << "NODE_" << par.first << "_DO_NOT_ANSWER" << std::endl;
+                std::cerr << "NODE_" << i << "_DO_NOT_ANSWER" << std::endl;
                 #endif
                 Checkpointing::getInstance()->SaveLocalData();
                 #ifdef TEST
-                std::cerr << "SEND_TRIGGER_TO_ALL_NODES BY ID: "<<std::to_string(Utils::getId()) << std::endl;
+                std::cerr << "SEND_TRIGGER_TO_ALL_NODES" << std::endl;
                 #endif
                 std::string message;
-                if (fSignalReceive) message = std::to_string(-1);           
-                else{
-                    message=std::to_string(Utils::getId());
-                }
+                if (fSignalReceive) message = std::to_string(-1);            
+                else message = std::to_string(i);            
                 strcpy(hello, message.c_str());
                 
                 int broadcastEnable=1;
+                setsockopt(sockfd, SOL_SOCKET, SO_BROADCAST, &broadcastEnable, sizeof(broadcastEnable));
                 
-                // --- Envio de trigger aos clientes numa porta fixa ---
-                
-                int portaClients = PORT + Utils::getNumServers() + 1;
-                int ret = 0;
-
-                cliaddr.sin_family      = AF_INET;
-                cliaddr.sin_addr.s_addr = htonl(INADDR_BROADCAST);
-                cliaddr.sin_port        = htons(portaClients);
-
-                for(int i = 0; i < 3; i++){
-
-                    setsockopt(sockfd, SOL_SOCKET, SO_BROADCAST, &broadcastEnable, sizeof(broadcastEnable));
-                    ret = sendto(sockfd, (const char *)hello, strlen(hello), MSG_CONFIRM, (const struct sockaddr *) &cliaddr, len);
-
-                    #ifdef DEBUGHEARTBEATMSG
-                    std::cerr << "TRY 1 BROADCAST => RETURN SENDTO " << ret <<std::endl;
-                    #endif
-
-                    if (ret > 0) {
-                        fSignalReceive=false;
-                        break;          
-                    } 
+                int ret=sendto(sockfd, (const char *)hello, strlen(hello), 
+                        MSG_CONFIRM, (const struct sockaddr *) &cliaddr,
+                            len);
+                #ifdef DEBUGHEARTBEATMSG
+                std::cerr << "TRY 1 BROADCAST => RETURN SENDTO " << ret <<std::endl;
+                #endif
+                if (ret <0) {
+                    for (int i = 2; i < 4; i++) {
+                        int broadcastEnable=1;
+                        setsockopt(sockfd, SOL_SOCKET, SO_BROADCAST, &broadcastEnable, sizeof(broadcastEnable));
+                        
+                        ret=sendto(sockfd, (const char *)hello, strlen(hello), 
+                                MSG_CONFIRM, (const struct sockaddr *) &cliaddr,
+                                    len);
+                        #ifdef DEBUGHEARTBEATMSG
+                        std::cerr << "TRY "<< i <<" BROADCAST => RETURN SENDTO " << ret <<std::endl;
+                        #endif
+                        if (ret > 0) {
+                            fSignalReceive=false;
+                            break;          
+                        } 
+                    }
+                    
                 }
                 
+                            
                 break;
             }
         }

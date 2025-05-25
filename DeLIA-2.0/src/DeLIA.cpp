@@ -1,7 +1,6 @@
 #include "../include/DeLIA.h"
 #include <fstream>
 #include <chrono>
-#include <iostream>
 #include <sys/stat.h>
 #include "Utils.h"
 #include "Checkpointing.h"
@@ -10,7 +9,6 @@
 #include "DeLIAData.h"
 #include "../libs/jsoncpp/json.h"
 #include "../libs/jsoncpp/json-forwards.h"
-#include <cmath> // Avaliar a necessidade de alterar o comando de compilação
 
 bool fCanWork = false;
 bool fFT = false;
@@ -29,47 +27,6 @@ bool ReadInputFile(std::string inputfile, IDataSettings *settings);
 //! If there are checkpointing data from a last execution
 //! with the same configuration, FT will recover.
 //!
-
-// ********************** NOVO ***********************//
-void DeLIA_DefineServers(int id, int comm_sz){
-
-    double num_servers = (double)(floor(log2(comm_sz)) < 1 ? 1 : (double)floor(log2(comm_sz)));
-    fUtil->setNumServers(num_servers);
-
-    if(id < num_servers){ // Is Server
-        fUtil->isServer(1);
-        fUtil->setMyServer((id+((int)num_servers-1)) % (int)num_servers);
-        int num_clients = ceil(((double)comm_sz - (double)num_servers)/num_servers)+1;
-        int *clients = new int[num_clients];
-        int contador = 0;
-        for(int i = id + num_servers ; i < comm_sz; i += num_servers){
-            clients[contador] = i;
-            contador++;
-        }
-        // Incluindo o servidor "à direita" como um dos clientes 
-        // que o servidor atual vai olhar (ta feliz Cleverson?)
-        clients[contador] = (id+1) % (int)num_servers;
-        contador++;
-
-        
-        fUtil->setMyClient(clients,contador);
-
-        // Print Remover
-        std::string joj = "ID: " + std::to_string(id) + " É servidor com clientes: ";
-        for(int i = 0; i < contador;i++){
-            joj += std::to_string(fUtil->getMyClient()[i])+" ";
-        }
-        std::cout << joj << std::endl;
-
-    }else{ // Is Client
-        fUtil->isServer(0); // alterar para setServer
-
-        fUtil->setMyServer(id % (int)num_servers);
-        fUtil->setMyClient(nullptr,0);
-
-    }
-}
-
 void DeLIA_Init(int id, int comm_sz, std::string inputfile, IDataSettings *settings,
                                std::vector<IDataGlobal *> data_global,
                                std::vector<IDataLocal *> data_local) {
@@ -82,9 +39,6 @@ void DeLIA_Init(int id, int comm_sz, std::string inputfile, IDataSettings *setti
         fCFT->setIDataGlobal(data_global);
         fCFT->setIDataLocal(data_local);
     }
-
-    DeLIA_DefineServers(id, comm_sz);
-
 }
 
 void DeLIA_Init(int id, int comm_sz, std::string inputfile, IDataSettings *settings,
@@ -96,9 +50,6 @@ void DeLIA_Init(int id, int comm_sz, std::string inputfile, IDataSettings *setti
     if (ReadInputFile(inputfile, settings)) {
         fCFT->setIDataGlobal(data_global);
     }
-
-    DeLIA_DefineServers(id, comm_sz);
-
 }
 
 void DeLIA_Init(int id, int comm_sz, std::string inputfile, IDataSettings *settings,
@@ -110,9 +61,6 @@ void DeLIA_Init(int id, int comm_sz, std::string inputfile, IDataSettings *setti
     if (ReadInputFile(inputfile, settings)) {
         fCFT->setIDataLocal(data_local);
     }
-
-    DeLIA_DefineServers(id, comm_sz);
-
 }
 
 void DeLIA_Init(int id, int comm_sz,
@@ -126,9 +74,6 @@ void DeLIA_Init(int id, int comm_sz,
     if (ReadInputFile(inputfile, settings)) {
         fCFT->clearListData();
     }
-
-    DeLIA_DefineServers(id, comm_sz);
-
 }
 
 void DeLIA_Init(int id, int comm_sz,
@@ -143,12 +88,7 @@ void DeLIA_Init(int id, int comm_sz,
     if (ReadInputFile(inputfile, settings)) {
         fCFT->clearListData();
     }
-
-    DeLIA_DefineServers(id, comm_sz);
-
 }
-
-
 
 bool DeLIA_SetGlobalData(void *global_data, int size, int type){
 

@@ -1,1 +1,0 @@
-/usr/bin/mpic++  -DFT -pthread -fPIE CMakeFiles/EXEC_TEST.dir/Main.cpp.o -o EXEC_TEST  liblibLC.a /home/gustavo/repo/projeto-tcc/test/C_FaultDetection/project/DeLIA_lib/libDeLIA.a 

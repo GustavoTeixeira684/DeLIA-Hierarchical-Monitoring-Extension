@@ -1,2 +1,0 @@
-/usr/bin/ar qc libDeLIA.a CMakeFiles/DeLIA.dir/libs/jsoncpp/jsoncpp.cpp.o CMakeFiles/DeLIA.dir/src/ApplicationSettings.cpp.o CMakeFiles/DeLIA.dir/src/Checkpointing.cpp.o CMakeFiles/DeLIA.dir/src/DeLIA.cpp.o CMakeFiles/DeLIA.dir/src/FaultDetection.cpp.o CMakeFiles/DeLIA.dir/src/Utils.cpp.o
-/usr/bin/ranlib libDeLIA.a

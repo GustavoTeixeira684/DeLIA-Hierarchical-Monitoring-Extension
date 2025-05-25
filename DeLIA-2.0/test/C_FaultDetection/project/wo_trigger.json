@@ -1,0 +1,12 @@
+{
+    "FT_FOLDER" : "./data",
+    "CHECKPOINTING_GLOBAL_ITERATION": 5,
+    "CHECKPOINTING_TIME_DIFF_LOCAL": 1,
+    "CHECKPOINTING_TIME_LOCAL" : 2,
+    "TRIGGER_SIGNAL" : false,
+    "TRIGGER_HEARTBEAT_MONITORING": {
+        "TYPE" : "LEADER",
+        "TIME_MAX_WAIT" : 20,
+        "SLEEP_THREAD_TIME" : 1
+    }
+} 

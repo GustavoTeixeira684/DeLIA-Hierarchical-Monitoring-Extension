@@ -1,0 +1,69 @@
+
+#!/bin/bash
+
+FT_PATH="$1"
+PASSINGINTERFACESGL_PATH=$FT_PATH/test/C_FaultDetection/project
+
+FILE_OUTPUT="$2"
+FILE_ERROUTPUT="$3"
+TYPE_TEST="$4"
+
+cd $PASSINGINTERFACESGL_PATH
+
+if [ -e $PASSINGINTERFACESGL_PATH/data ]; then
+    rm -rv ./data/*; wait
+    rm -r data
+    echo "DELETING Data"
+fi
+
+cd $PASSINGINTERFACESGL_PATH
+mkdir data
+TEST_LOCAL="TEST_LOCAL"
+
+if [ "$TYPE_TEST" = "$TEST_LOCAL" ]; then
+    echo "LOCAL TEST WITH FAIL"
+    mpirun -n 4 $PASSINGINTERFACESGL_PATH/bin/EXEC_TEST 10 "wo_trigger.json" >$FILE_OUTPUT 2>$FILE_ERROUTPUT &
+else
+    echo "CI TEST"
+    mpirun --allow-run-as-root -n 4 $PASSINGINTERFACESGL_PATH/bin/EXEC_TEST 10 "wo_trigger.json" >$FILE_OUTPUT 2>$FILE_ERROUTPUT &
+fi
+sleep 5;
+STATERUN=$(ps -C EXEC_TEST)
+echo $STATERUN
+JOB_ID=$(echo $STATERUN | grep -o -E '[0-9]+' | head -n 7 | tail -6 | sed -e 's/^0\+//')
+echo $JOB_ID
+SIGSTOP=19
+SIGKILL=9
+kill -$SIGSTOP $JOB_ID
+sleep 25
+ps -C EXEC_TEST
+DETECT_NODE="NODE_1_DO_NOT_ANSWER"
+if $(grep -q $DETECT_NODE $FILE_ERROUTPUT)
+then
+    echo "${HITCOLOR}LEADER_DETECT"
+else
+    echo "${ERRORCOLOR}LEADER_DETECT_NOT" 1>&2
+    exit 125
+fi
+sleep 10
+
+TRIGGER_RECEIVED="OBSERVED_NODE_2_RECEIVES_TRIGGER"
+if $(grep -q $TRIGGER_RECEIVED $FILE_ERROUTPUT)
+then
+   echo "${HITCOLOR}NODE_2_OK" 
+else
+    echo "${ERRORCOLOR}NODE_2_ERR" 1>&2
+    exit 125
+fi
+
+TRIGGER_RECEIVED="OBSERVED_NODE_3_RECEIVES_TRIGGER"
+if $(grep -q $TRIGGER_RECEIVED $FILE_ERROUTPUT)
+then
+    echo "${HITCOLOR}NODE_3_OK"
+else
+    echo "${ERRORCOLOR}NODE_3_ERR" 1>&2
+    exit 125
+fi
+
+echo "VAI DA SIGKILL"
+killall -s $SIGKILL EXEC_TEST

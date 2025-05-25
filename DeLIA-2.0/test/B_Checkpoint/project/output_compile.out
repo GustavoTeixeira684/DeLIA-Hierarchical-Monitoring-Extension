@@ -1,0 +1,107 @@
+removed './build/CMakeCache.txt'
+removed directory './build/CMakeFiles/pkgRedirects'
+removed './build/CMakeFiles/CMakeConfigureLog.yaml'
+removed './build/CMakeFiles/FindMPI/test_mpi_C.bin'
+removed './build/CMakeFiles/FindMPI/test_mpi_CXX.bin'
+removed directory './build/CMakeFiles/FindMPI'
+removed './build/CMakeFiles/libGC.dir/Settings.cpp.o'
+removed './build/CMakeFiles/libGC.dir/GDClass.cpp.o'
+removed './build/CMakeFiles/libGC.dir/Settings.cpp.o.d'
+removed './build/CMakeFiles/libGC.dir/cmake_clean_target.cmake'
+removed './build/CMakeFiles/libGC.dir/depend.make'
+removed './build/CMakeFiles/libGC.dir/link.txt'
+removed './build/CMakeFiles/libGC.dir/GDClass.cpp.o.d'
+removed './build/CMakeFiles/libGC.dir/cmake_clean.cmake'
+removed './build/CMakeFiles/libGC.dir/compiler_depend.internal'
+removed './build/CMakeFiles/libGC.dir/flags.make'
+removed './build/CMakeFiles/libGC.dir/compiler_depend.ts'
+removed './build/CMakeFiles/libGC.dir/progress.make'
+removed './build/CMakeFiles/libGC.dir/build.make'
+removed './build/CMakeFiles/libGC.dir/DependInfo.cmake'
+removed './build/CMakeFiles/libGC.dir/compiler_depend.make'
+removed directory './build/CMakeFiles/libGC.dir'
+removed './build/CMakeFiles/TargetDirectories.txt'
+removed './build/CMakeFiles/Makefile2'
+removed './build/CMakeFiles/CMakeDirectoryInformation.cmake'
+removed './build/CMakeFiles/cmake.check_cache'
+removed directory './build/CMakeFiles/CMakeScratch'
+removed './build/CMakeFiles/Makefile.cmake'
+removed './build/CMakeFiles/3.28.3/CMakeDetermineCompilerABI_C.bin'
+removed './build/CMakeFiles/3.28.3/CMakeSystem.cmake'
+removed './build/CMakeFiles/3.28.3/CMakeDetermineCompilerABI_CXX.bin'
+removed './build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp'
+removed './build/CMakeFiles/3.28.3/CompilerIdCXX/a.out'
+removed directory './build/CMakeFiles/3.28.3/CompilerIdCXX/tmp'
+removed directory './build/CMakeFiles/3.28.3/CompilerIdCXX'
+removed './build/CMakeFiles/3.28.3/CompilerIdC/CMakeCCompilerId.c'
+removed './build/CMakeFiles/3.28.3/CompilerIdC/a.out'
+removed directory './build/CMakeFiles/3.28.3/CompilerIdC/tmp'
+removed directory './build/CMakeFiles/3.28.3/CompilerIdC'
+removed './build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake'
+removed './build/CMakeFiles/3.28.3/CMakeCCompiler.cmake'
+removed directory './build/CMakeFiles/3.28.3'
+removed './build/CMakeFiles/EXEC_TEST.dir/Main.cpp.o'
+removed './build/CMakeFiles/EXEC_TEST.dir/depend.make'
+removed './build/CMakeFiles/EXEC_TEST.dir/link.txt'
+removed './build/CMakeFiles/EXEC_TEST.dir/Main.cpp.o.d'
+removed './build/CMakeFiles/EXEC_TEST.dir/cmake_clean.cmake'
+removed './build/CMakeFiles/EXEC_TEST.dir/compiler_depend.internal'
+removed './build/CMakeFiles/EXEC_TEST.dir/flags.make'
+removed './build/CMakeFiles/EXEC_TEST.dir/compiler_depend.ts'
+removed './build/CMakeFiles/EXEC_TEST.dir/progress.make'
+removed './build/CMakeFiles/EXEC_TEST.dir/build.make'
+removed './build/CMakeFiles/EXEC_TEST.dir/DependInfo.cmake'
+removed './build/CMakeFiles/EXEC_TEST.dir/compiler_depend.make'
+removed directory './build/CMakeFiles/EXEC_TEST.dir'
+removed './build/CMakeFiles/progress.marks'
+removed directory './build/CMakeFiles'
+removed './build/EXEC_TEST'
+removed './build/Makefile'
+removed './build/cmake_install.cmake'
+removed './build/install_manifest.txt'
+removed './build/liblibGC.a'
+DELETING BUILD
+removed './data/DeLIA_GlobalData.bin'
+removed './data/DeLIA_gIteration.txt'
+removed './data/settings.bin'
+DELETING Data
+removed './DeLIA_lib/DeLIAConfig-noconfig.cmake'
+removed './DeLIA_lib/DeLIAConfig.cmake'
+removed './DeLIA_lib/include/IDataGlobal.h'
+removed './DeLIA_lib/include/IDataSettings.h'
+removed './DeLIA_lib/include/DeLIA.h'
+removed './DeLIA_lib/include/IDataLocal.h'
+removed directory './DeLIA_lib/include'
+removed './DeLIA_lib/libDeLIA.a'
+DELETING DeLIA_lib
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/mpicc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/mpic++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- MPI 3.1 found & enabled.
+-- Using DeLIA
+-- Find /home/gustavo/repo/projeto-tcc/test/B_Checkpoint/project
+-- Setting build type to 'Debug'.
+-- Configuring done (1.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/gustavo/repo/projeto-tcc/test/B_Checkpoint/project/build
+[ 20%] Building CXX object CMakeFiles/libGC.dir/Settings.cpp.o
+[ 40%] Building CXX object CMakeFiles/libGC.dir/GDClass.cpp.o
+[ 60%] Linking CXX static library liblibGC.a
+[ 60%] Built target libGC
+[ 80%] Building CXX object CMakeFiles/EXEC_TEST.dir/Main.cpp.o
+[100%] Linking CXX executable EXEC_TEST
+[100%] Built target EXEC_TEST
+[ 60%] Built target libGC
+[100%] Built target EXEC_TEST
+Install the project...
+-- Install configuration: ""
+-- Installing: /home/gustavo/repo/projeto-tcc/test/B_Checkpoint/project/bin/EXEC_TEST

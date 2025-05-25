@@ -1,0 +1,276 @@
+============================================
+-----	 FAULT TOLERANCE 	-----
+ FT_FOLDER 				 = ./data
+ CHECKPOINTING_TIME_GLOBAL 		 = -1
+ CHECKPOINTING_TIME_LOCAL 		 = 2
+ CHECKPOINTING_TIME_DIFF_LOCAL 		 = 1
+ CHECKPOINTING_GLOBAL_ITERATION 	 = 5
+ TIME_SHARING_LOCAL_DATA_NEIGHBOR 	 = -1
+ CHECKPOINTING_LOCAL_RECENT 		 = 1
+ WORKLOAD_SCHEDULER 			  = DS
+ WORKLOAD_SCHEDULER_LEADER 		 = -1
+ TRIGGER_SIGNAL 			 = 0
+ID: 1 É servidor com clientes: 3 0 
+ TRIGGER_HEARTBEAT_MONITORING:
+	 TYPE 				 = LEADER
+	 TIME_MAX_WAIT			 = 20
+	 SLEEP_THREAD_TIME		 = 1
+============================================
+ID: 0 É servidor com clientes: 2 1 
+ID: 2 É cliente do servidor 0
+ID: 3 É cliente do servidor 1
+ID 2 (Cliente) enviou report ao servidor 0 na porta 8080
+ID 3 (Cliente) enviou report ao servidor 1 na porta 8081
+ID 1 (Servidor) enviou report ao servidor 0 na porta 8080
+ID 0 (Servidor) enviou report ao servidor 1 na porta 8081
+============================================
+-----	 DeLIA::SaveGlobalData 	-----
+-----	 Iteration: 5		-----
+============================================
+ID 3 (Cliente) enviou report ao servidor 1 na porta 8081
+ID 1 (Servidor) enviou report ao servidor 0 na porta 8080
+No ID: 1 É Servidor E está recebendo report do cliente: 3com comprimento: 1 do ip: 127.0.0.1 pela porta: 8083
+ID 2 (Cliente) enviou report ao servidor 0 na porta 8080
+ID 0 (Servidor) enviou report ao servidor 1 na porta 8081
+No ID: 0 É Servidor E está recebendo report do cliente: 2com comprimento: 1 do ip: 127.0.0.1 pela porta: 8083
+ID 2 (Cliente) enviou report ao servidor 0 na porta 8080
+ID 3 (Cliente) enviou report ao servidor 1 na porta 8081
+ID 0 (Servidor) enviou report ao servidor 1 na porta 8081
+No ID: 0 É Servidor E está recebendo report do cliente: 2com comprimento: 1 do ip: 127.0.0.1 pela porta: 8083
+ID 3 (Cliente) enviou report ao servidor 1 na porta 8081
+ID 2 (Cliente) enviou report ao servidor 0 na porta 8080
+ID 0 (Servidor) enviou report ao servidor 1 na porta 8081
+No ID: 0 É Servidor E está recebendo report do cliente: 2com comprimento: 1 do ip: 127.0.0.1 pela porta: 8083
+ID 2 (Cliente) enviou report ao servidor 0 na porta 8080
+ID 3 (Cliente) enviou report ao servidor 1 na porta 8081
+ID 0 (Servidor) enviou report ao servidor 1 na porta 8081
+No ID: 0 É Servidor E está recebendo report do cliente: 2com comprimento: 1 do ip: 127.0.0.1 pela porta: 8083
+ID 3 (Cliente) enviou report ao servidor 1 na porta 8081
+ID 2 (Cliente) enviou report ao servidor 0 na porta 8080
+ID 0 (Servidor) enviou report ao servidor 1 na porta 8081
+No ID: 0 É Servidor E está recebendo report do cliente: 2com comprimento: 1 do ip: 127.0.0.1 pela porta: 8083
+No: 0identificou falha no no: 1
+JV - Server ID 0 vai enviar trigger pra porta 8083
+ID 3 (Cliente) recebeu trigger de 0 na porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 0 (Servidor) recebeu trigger de 0 na porta 8083
+Client - 0eh loop detect falha
+ID 2 (Cliente) recebeu trigger de 0 na porta 8083
+ID 3 (Cliente) enviou report ao servidor 1 na porta 8081
+ID 2 (Cliente) enviou report ao servidor 0 na porta 8080
+No ID: 0 É Servidor E está recebendo report do cliente: 2com comprimento: 1 do ip: 127.0.0.1 pela porta: 8083
+No: 0identificou falha no no: 1
+JV - Server ID 0 vai enviar trigger pra porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 3 (Cliente) recebeu trigger de 0 na porta 8083
+ID 2 (Cliente) recebeu trigger de 0 na porta 8083
+ID 0 (Servidor) recebeu trigger de 0 na porta 8083
+Client - 0eh loop detect falha
+No ID: 0 É Servidor E está recebendo report do cliente: 2com comprimento: 1 do ip: 127.0.0.1 pela porta: 8083
+No: 0identificou falha no no: 1
+ID 0 (Servidor) enviou report ao servidor ID 3 (Cliente) enviou report ao servidor 1 na porta 8081
+ID 2 (Cliente) enviou report ao servidor 0 na porta 8080
+1 na porta 8081
+JV - Server ID 0 vai enviar trigger pra porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 0 (Servidor) recebeu trigger de 0 na porta 8083
+Client - 0eh loop detect falha
+ID 2 (Cliente) recebeu trigger de 0 na porta 8083
+ID 3 (Cliente) recebeu trigger de 0 na porta 8083
+No ID: 0 É Servidor E está recebendo report do cliente: 0com comprimento: 1 do ip: 192.168.15.10 pela porta: 8083
+No: 0identificou falha no no: 1
+JV - Server ID 0 vai enviar trigger pra porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 0 (Servidor) recebeu trigger de 0 na porta 8083
+Client - 0eh loop detect falha
+No ID: 0 É Servidor E está recebendo report do cliente: 0com comprimento: 1 do ip: 192.168.15.10 pela porta: 8083
+No: 0identificou falha no no: 1
+JV - Server ID 0 vai enviar trigger pra porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 0 (Servidor) recebeu trigger de 0 na porta 8083
+Client - 0eh loop detect falha
+ID 0 (Servidor) enviou report ao servidor 1 na porta 8081
+ID 2 (Cliente) enviou report ao servidor 0 na porta 8080
+No ID: 0 É Servidor E está recebendo report do cliente: 2com comprimento: 1 do ip: 127.0.0.1 pela porta: 8083
+No: 0identificou falha no no: 1
+JV - Server ID 0 vai enviar trigger pra porta 8083
+ID 2 (Cliente) recebeu trigger de 0 na porta 8083
+ID 0 (Servidor) recebeu trigger de 0 na porta 8083
+Client - 0eh loop detect falha
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 3 (Cliente) enviou report ao servidor 1 na porta 8081
+No ID: 0 É Servidor E está recebendo report do cliente: 2com comprimento: 1 do ip: 127.0.0.1 pela porta: 8083
+No: 0identificou falha no no: 1
+ID 2 (Cliente) enviou report ao servidor 0 na porta 8080
+JV - Server ID 0 vai enviar trigger pra porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 0 (Servidor) recebeu trigger de 0 na porta 8083
+Client - 0eh loop detect falha
+ID 2 (Cliente) recebeu trigger de 0 na porta 8083
+ID 3 (Cliente) recebeu trigger de 0 na porta 8083
+No ID: 0 É Servidor E está recebendo report do cliente: 2com comprimento: 1 do ip: 127.0.0.1 pela porta: 8083
+No: 0identificou falha no no: 1
+ID 2 (Cliente) enviou report ao servidor 0 na porta 8080
+ID 2 (Cliente) recebeu trigger de 0 na porta 8083
+JV - Server ID 0 vai enviar trigger pra porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 0 (Servidor) recebeu trigger de 0 na porta 8083
+Client - 0eh loop detect falha
+ID 3 (Cliente) enviou report ao servidor 1 na porta 8081
+ID 3 (Cliente) recebeu trigger de 0 na porta 8083
+ID 2 (Cliente) enviou report ao servidor 0 na porta 8080
+ID 0 (Servidor) enviou report ao servidor 1 na porta 8081
+No ID: 0 É Servidor E está recebendo report do cliente: 2com comprimento: 1 do ip: 127.0.0.1 pela porta: 8083
+No: 0identificou falha no no: 1
+ID 3 (Cliente) enviou report ao servidor 1 na porta 8081
+JV - Server ID 0 vai enviar trigger pra porta 8083
+ID 3 (Cliente) recebeu trigger de 0 na porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 0 (Servidor) recebeu trigger de 0 na porta 8083
+Client - 0eh loop detect falha
+ID 2 (Cliente) recebeu trigger de 0 na porta 8083
+No ID: 0 É Servidor E está recebendo report do cliente: 2com comprimento: 1 do ip: 127.0.0.1 pela porta: 8083
+No: 0identificou falha no no: 1
+JV - Server ID 0 vai enviar trigger pra porta 8083
+ID 2 (Cliente) enviou report ao servidor 0 na porta 8080
+ID 2 (Cliente) recebeu trigger de 0 na porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 0 (Servidor) recebeu trigger de 0 na porta 8083
+Client - 0eh loop detect falha
+No ID: 0 É Servidor E está recebendo report do cliente: 0com comprimento: 1 do ip: 192.168.15.10 pela porta: 8083
+No: 0identificou falha no no: 1
+JV - Server ID 0 vai enviar trigger pra porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 0 (Servidor) recebeu trigger de 0 na porta 8083
+Client - 0eh loop detect falha
+No ID: 0 É Servidor E está recebendo report do cliente: 0com comprimento: 1 do ip: 192.168.15.10 pela porta: 8083
+No: 0identificou falha no no: 1
+JV - Server ID 0 vai enviar trigger pra porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 3 (Cliente) enviou report ao servidor 1 na porta 8081
+No ID: 0 É Servidor E está recebendo report do cliente: 2com comprimento: 1 do ip: 127.0.0.1 pela porta: 8083
+No: 0identificou falha no no: 1
+ID 2 (Cliente) enviou report ao servidor 0 na porta 8080
+ID 0 (Servidor) enviou report ao servidor 1 na porta 8081
+JV - Server ID 0 vai enviar trigger pra porta 8083
+ID 3 (Cliente) recebeu trigger de 0 na porta 8083
+ID 2 (Cliente) recebeu trigger de 0 na porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 0 (Servidor) recebeu trigger de 0 na porta 8083
+Client - 0eh loop detect falha
+No ID: 0 É Servidor E está recebendo report do cliente: 0com comprimento: 1 do ip: 192.168.15.10 pela porta: 8083
+No: 0identificou falha no no: 1
+JV - Server ID 0 vai enviar trigger pra porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 0 (Servidor) recebeu trigger de 0 na porta 8083
+Client - 0eh loop detect falha
+No ID: 0 É Servidor E está recebendo report do cliente: 0com comprimento: 1 do ip: 192.168.15.10 pela porta: 8083
+No: 0identificou falha no no: 1
+JV - Server ID 0 vai enviar trigger pra porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 0 (Servidor) recebeu trigger de 0 na porta 8083
+Client - 0eh loop detect falha
+ID 0 (Servidor) enviou report ao servidor 1 na porta 8081
+ID 3 (Cliente) enviou report ao servidor 1 na porta 8081
+No ID: 0 É Servidor E está recebendo report do cliente: 2com comprimento: 1 do ip: 127.0.0.1 pela porta: 8083
+No: 0identificou falha no no: 1
+ID 2 (Cliente) enviou report ao servidor 0 na porta 8080
+JV - Server ID 0 vai enviar trigger pra porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 3 (Cliente) recebeu trigger de 0 na porta 8083
+ID 2 (Cliente) recebeu trigger de 0 na porta 8083
+ID 0 (Servidor) recebeu trigger de 0 na porta 8083
+Client - 0eh loop detect falha
+ID 2 (Cliente) enviou report ao servidor 0 na porta 8080
+ID 3 (Cliente) enviou report ao servidor 1 na porta 8081
+No ID: 0 É Servidor E está recebendo report do cliente: 2com comprimento: 1 do ip: 127.0.0.1 pela porta: 8083
+No: 0identificou falha no no: 1
+JV - Server ID 0 vai enviar trigger pra porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 0 (Servidor) recebeu trigger de 0 na porta 8083
+Client - 0eh loop detect falha
+ID 2 (Cliente) recebeu trigger de 0 na porta 8083
+ID 3 (Cliente) recebeu trigger de 0 na porta 8083
+No ID: 0 É Servidor E está recebendo report do cliente: 0com comprimento: 1 do ip: 192.168.15.10 pela porta: 8083
+No: 0identificou falha no no: 1
+JV - Server ID 0 vai enviar trigger pra porta 8083
+ID 0 (Servidor) recebeu trigger de 0JV - SIGNAL RECEIVE FALSE - JV  na porta 
+8083
+Client - 0eh loop detect falha
+ID 0 (Servidor) enviou report ao servidor 1 na porta 8081
+ID 3 (Cliente) enviou report ao servidor 1 na porta 8081
+ID 2 (Cliente) enviou report ao servidor 0 na porta 8080
+No ID: 0 É Servidor E está recebendo report do cliente: 2com comprimento: 1 do ip: 127.0.0.1 pela porta: 8083
+No: 0identificou falha no no: 1
+JV - Server ID 0 vai enviar trigger pra porta 8083
+ID 2 (Cliente) recebeu trigger de 0 na porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 0 (Servidor) recebeu trigger de 0 na porta 8083
+Client - 0eh loop detect falha
+ID 3 (Cliente) recebeu trigger de 0 na porta 8083
+No ID: 0 É Servidor E está recebendo report do cliente: 2com comprimento: 1 do ip: 127.0.0.1 pela porta: 8083
+No: 0identificou falha no no: 1
+ID 3 (Cliente) enviou report ao servidor 1 na porta 8081
+ID 2 (Cliente) enviou report ao servidor 0 na porta 8080
+JV - Server ID 0 vai enviar trigger pra porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 0 (Servidor) recebeu trigger de 0 na porta 8083
+Client - 0eh loop detect falha
+ID 2 (Cliente) recebeu trigger de 0 na porta 8083
+ID 3 (Cliente) recebeu trigger de 0 na porta 8083
+ID 2 (Cliente) enviou report ao servidor 0 na porta 8080
+ID 3 (Cliente) enviou report ao servidor 1 na porta 8081
+No ID: 0 É Servidor E está recebendo report do cliente: 2com comprimento: 1 do ip: 127.0.0.1 pela porta: 8083
+No: 0identificou falha no no: 1
+JV - Server ID 0 vai enviar trigger pra porta 8083
+ID 3 (Cliente) recebeu trigger de 0 na porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 0 (Servidor) recebeu trigger de 0 na porta 8083
+Client - 0eh loop detect falha
+ID 2 (Cliente) recebeu trigger de 0 na porta 8083
+ID 2 (Cliente) enviou report ao servidor 0 na porta 8080
+ID 3 (Cliente) enviou report ao servidor 1 na porta 8081
+ID 0 (Servidor) enviou report ao servidor 1 na porta 8081No ID: 
+0 É Servidor E está recebendo report do cliente: 2com comprimento: 1 do ip: 127.0.0.1 pela porta: 8083
+No: 0identificou falha no no: 1
+JV - Server ID 0 vai enviar trigger pra porta 8083
+ID 2 (Cliente) recebeu trigger de 0 na porta 8083
+ID 3 (Cliente) recebeu trigger de 0 na porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 0 (Servidor) recebeu trigger de 0 na porta 8083
+Client - 0eh loop detect falha
+ID 2 (Cliente) enviou report ao servidor 0 na porta 8080
+ID 3 (Cliente) enviou report ao servidor 1 na porta 8081
+No ID: 0 É Servidor E está recebendo report do cliente: 2com comprimento: 1 do ip: 127.0.0.1 pela porta: 8083
+No: 0identificou falha no no: 1
+JV - Server ID 0 vai enviar trigger pra porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 0 (Servidor) recebeu trigger de 0 na porta 8083
+Client - 0eh loop detect falha
+ID 3 (Cliente) recebeu trigger de 0 na porta 8083
+ID 2 (Cliente) recebeu trigger de 0 na porta 8083
+No ID: 0 É Servidor E está recebendo report do cliente: 2com comprimento: 1 do ip: 127.0.0.1 pela porta: 8083
+No: 0identificou falha no no: 1
+ID 3 (Cliente) enviou report ao servidor 1 na porta 8081
+ID 2 (Cliente) enviou report ao servidor 0 na porta 8080
+JV - Server ID 0 vai enviar trigger pra porta 8083
+ID 2 (Cliente) recebeu trigger de 0 na porta 8083
+ID 3 (Cliente) recebeu trigger de 0 na porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 0 (Servidor) recebeu trigger de 0 na porta 8083
+Client - 0eh loop detect falha
+No ID: 0 É Servidor E está recebendo report do cliente: 0com comprimento: 1 do ip: 192.168.15.10 pela porta: 8083
+No: 0identificou falha no no: 1
+JV - Server ID 0 vai enviar trigger pra porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 0 (Servidor) enviou report ao servidor 1 na porta 8081
+ID 3 (Cliente) enviou report ao servidor 1 na porta 8081
+ID 2 (Cliente) enviou report ao servidor 0 na porta 8080
+No ID: 0 É Servidor E está recebendo report do cliente: 2com comprimento: 1 do ip: 127.0.0.1 pela porta: 8083
+No: 0identificou falha no no: 1
+JV - Server ID 0 vai enviar trigger pra porta 8083
+ID 3 (Cliente) recebeu trigger de 0 na porta 8083
+ID 2 (Cliente) recebeu trigger de 0 na porta 8083
+JV - SIGNAL RECEIVE FALSE - JV 
+ID 0 (Servidor) recebeu trigger de 0 na porta 8083
+Client - 0eh loop detect falha

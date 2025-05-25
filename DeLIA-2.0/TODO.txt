@@ -1,0 +1,9 @@
+1 - Corrigir o ponto de a lista de clientes estar trazendo um a mais
+2 - Desenvolver uma lógica para os processos Servidores analisarem apenas os seus clientes (lista armazenada na classe Utils)
+3 - Desenvolver uma lógica para os processos Clientes mandarem suas informações somente para seus servidores (id do servidor na classe Util e usar a Porta do Socket)
+3.1 - Desenvolver uma lógica para o servidor atuar como cliente e também como servidor
+4 - Entregar o projeto e jogar muito Vava
+
+
+
+Ja desenvolvemos a lógica para subir processos como servidores e quais clientes eles precisam olhar

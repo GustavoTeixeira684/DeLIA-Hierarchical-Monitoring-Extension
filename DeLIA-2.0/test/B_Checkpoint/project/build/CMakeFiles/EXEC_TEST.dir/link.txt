@@ -1,0 +1,1 @@
+/usr/bin/mpic++ -pg -DFT -pthread -fPIE -g -O0 -pg -DDEBUG -pg CMakeFiles/EXEC_TEST.dir/Main.cpp.o -o EXEC_TEST  liblibGC.a /home/gustavo/repo/projeto-tcc/test/B_Checkpoint/project/DeLIA_lib/libDeLIA.a 

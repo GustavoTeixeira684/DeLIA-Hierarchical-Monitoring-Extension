@@ -1,0 +1,109 @@
+removed './build/CMakeCache.txt'
+removed directory './build/CMakeFiles/pkgRedirects'
+removed './build/CMakeFiles/CMakeConfigureLog.yaml'
+removed './build/CMakeFiles/DeLIA.dir/libs/jsoncpp/jsoncpp.cpp.o'
+removed './build/CMakeFiles/DeLIA.dir/libs/jsoncpp/jsoncpp.cpp.o.d'
+removed directory './build/CMakeFiles/DeLIA.dir/libs/jsoncpp'
+removed directory './build/CMakeFiles/DeLIA.dir/libs'
+removed './build/CMakeFiles/DeLIA.dir/cmake_clean_target.cmake'
+removed './build/CMakeFiles/DeLIA.dir/depend.make'
+removed './build/CMakeFiles/DeLIA.dir/link.txt'
+removed './build/CMakeFiles/DeLIA.dir/cmake_clean.cmake'
+removed './build/CMakeFiles/DeLIA.dir/compiler_depend.internal'
+removed './build/CMakeFiles/DeLIA.dir/flags.make'
+removed './build/CMakeFiles/DeLIA.dir/compiler_depend.ts'
+removed './build/CMakeFiles/DeLIA.dir/progress.make'
+removed './build/CMakeFiles/DeLIA.dir/build.make'
+removed './build/CMakeFiles/DeLIA.dir/DependInfo.cmake'
+removed './build/CMakeFiles/DeLIA.dir/src/Checkpointing.cpp.o'
+removed './build/CMakeFiles/DeLIA.dir/src/FaultDetection.cpp.o'
+removed './build/CMakeFiles/DeLIA.dir/src/Utils.cpp.o.d'
+removed './build/CMakeFiles/DeLIA.dir/src/ApplicationSettings.cpp.o'
+removed './build/CMakeFiles/DeLIA.dir/src/ApplicationSettings.cpp.o.d'
+removed './build/CMakeFiles/DeLIA.dir/src/DeLIA.cpp.o.d'
+removed './build/CMakeFiles/DeLIA.dir/src/DeLIA.cpp.o'
+removed './build/CMakeFiles/DeLIA.dir/src/FaultDetection.cpp.o.d'
+removed './build/CMakeFiles/DeLIA.dir/src/Utils.cpp.o'
+removed './build/CMakeFiles/DeLIA.dir/src/Checkpointing.cpp.o.d'
+removed directory './build/CMakeFiles/DeLIA.dir/src'
+removed './build/CMakeFiles/DeLIA.dir/compiler_depend.make'
+removed directory './build/CMakeFiles/DeLIA.dir'
+removed './build/CMakeFiles/TargetDirectories.txt'
+removed './build/CMakeFiles/Makefile2'
+removed './build/CMakeFiles/CMakeDirectoryInformation.cmake'
+removed './build/CMakeFiles/cmake.check_cache'
+removed './build/CMakeFiles/Makefile.cmake'
+removed './build/CMakeFiles/3.28.3/CMakeDetermineCompilerABI_C.bin'
+removed './build/CMakeFiles/3.28.3/CMakeSystem.cmake'
+removed './build/CMakeFiles/3.28.3/CMakeDetermineCompilerABI_CXX.bin'
+removed './build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp'
+removed './build/CMakeFiles/3.28.3/CompilerIdCXX/a.out'
+removed directory './build/CMakeFiles/3.28.3/CompilerIdCXX/tmp'
+removed directory './build/CMakeFiles/3.28.3/CompilerIdCXX'
+removed './build/CMakeFiles/3.28.3/CompilerIdC/CMakeCCompilerId.c'
+removed './build/CMakeFiles/3.28.3/CompilerIdC/a.out'
+removed directory './build/CMakeFiles/3.28.3/CompilerIdC/tmp'
+removed directory './build/CMakeFiles/3.28.3/CompilerIdC'
+removed './build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake'
+removed './build/CMakeFiles/3.28.3/CMakeCCompiler.cmake'
+removed directory './build/CMakeFiles/3.28.3'
+removed './build/CMakeFiles/progress.marks'
+removed './build/CMakeFiles/Export/1c77d8a8cbe67a72f781c0cdf04a6cb7/DeLIAConfig-noconfig.cmake'
+removed './build/CMakeFiles/Export/1c77d8a8cbe67a72f781c0cdf04a6cb7/DeLIAConfig.cmake'
+removed directory './build/CMakeFiles/Export/1c77d8a8cbe67a72f781c0cdf04a6cb7'
+removed directory './build/CMakeFiles/Export'
+removed directory './build/CMakeFiles'
+removed './build/DeLIA_lib/DeLIAConfig.cmake'
+removed directory './build/DeLIA_lib'
+removed './build/Makefile'
+removed './build/cmake_install.cmake'
+removed './build/install_manifest.txt'
+removed './build/libDeLIA.a'
+DELETING BUILD
+removed './DeLIA_lib/DeLIAConfig-noconfig.cmake'
+removed './DeLIA_lib/DeLIAConfig.cmake'
+removed './DeLIA_lib/include/IDataGlobal.h'
+removed './DeLIA_lib/include/IDataSettings.h'
+removed './DeLIA_lib/include/DeLIA.h'
+removed './DeLIA_lib/include/IDataLocal.h'
+removed directory './DeLIA_lib/include'
+removed './DeLIA_lib/libDeLIA.a'
+DELETING DeLIA_lib
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/mpicc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/mpic++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Setting build type to '' as none was specified.
+-- Setting build with TESTING.
+-- Setting build with VERBOSE.
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/gustavo/repo/projeto-tcc/build
+[ 14%] Building CXX object CMakeFiles/DeLIA.dir/src/DeLIA.cpp.o
+[ 28%] Building CXX object CMakeFiles/DeLIA.dir/libs/jsoncpp/jsoncpp.cpp.o
+[ 42%] Building CXX object CMakeFiles/DeLIA.dir/src/ApplicationSettings.cpp.o
+[ 57%] Building CXX object CMakeFiles/DeLIA.dir/src/Checkpointing.cpp.o
+[ 71%] Building CXX object CMakeFiles/DeLIA.dir/src/Utils.cpp.o
+[ 85%] Building CXX object CMakeFiles/DeLIA.dir/src/FaultDetection.cpp.o
+[100%] Linking CXX static library libDeLIA.a
+[100%] Built target DeLIA
+[100%] Built target DeLIA
+Install the project...
+-- Install configuration: ""
+-- Installing: /home/gustavo/repo/projeto-tcc/DeLIA_lib/libDeLIA.a
+-- Installing: /home/gustavo/repo/projeto-tcc/DeLIA_lib/include
+-- Installing: /home/gustavo/repo/projeto-tcc/DeLIA_lib/include/IDataGlobal.h
+-- Installing: /home/gustavo/repo/projeto-tcc/DeLIA_lib/include/IDataSettings.h
+-- Installing: /home/gustavo/repo/projeto-tcc/DeLIA_lib/include/DeLIA.h
+-- Installing: /home/gustavo/repo/projeto-tcc/DeLIA_lib/include/IDataLocal.h
+-- Up-to-date: /home/gustavo/repo/projeto-tcc/DeLIA_lib/libDeLIA.a
+-- Installing: /home/gustavo/repo/projeto-tcc/DeLIA_lib/DeLIAConfig.cmake
+-- Installing: /home/gustavo/repo/projeto-tcc/DeLIA_lib/DeLIAConfig-noconfig.cmake

@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblibLC.a CMakeFiles/libLC.dir/LDClass.cpp.o CMakeFiles/libLC.dir/Settings.cpp.o
+/usr/bin/ranlib liblibLC.a

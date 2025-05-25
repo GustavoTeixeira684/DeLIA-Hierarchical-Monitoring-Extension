@@ -1,0 +1,22 @@
+removed './data/DeLIA_Iteration_Localnode_0.txt'
+removed './data/DeLIA_Iteration_Localnode_1.txt'
+removed './data/DeLIA_Iteration_Localnode_2.txt'
+removed './data/DeLIA_Iteration_Localnode_3.txt'
+removed './data/DeLIA_Local_node_0_gIteration_9_local_data_example.bin'
+removed './data/DeLIA_Local_node_1_gIteration_9_local_data_example.bin'
+removed './data/DeLIA_Local_node_2_gIteration_9_local_data_example.bin'
+removed './data/DeLIA_Local_node_3_gIteration_9_local_data_example.bin'
+removed './data/settings.bin'
+DELETING Data
+CI TEST
+PID TTY TIME CMD 41159 pts/1 00:00:00 EXEC_TEST 41160 pts/1 00:00:00 EXEC_TEST 41161 pts/1 00:00:00 EXEC_TEST 41162 pts/1 00:00:00 EXEC_TEST 41164 pts/1 00:00:00 EXEC_TEST
+aqui
+41159
+matando o processo
+41159
+matando o processo pela segunda vez
+41159
+RANK_0_RECEIVED_SIGNAL
+RANK_1_RECEIVED_SIGNAL
+RANK_2_RECEIVED_SIGNAL
+RANK_3_RECEIVED_SIGNAL

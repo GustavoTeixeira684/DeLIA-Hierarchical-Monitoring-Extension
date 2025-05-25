@@ -1,0 +1,7 @@
+/home/gustavo/repo/projeto-tcc/build/CMakeFiles/DeLIA.dir
+/home/gustavo/repo/projeto-tcc/build/CMakeFiles/edit_cache.dir
+/home/gustavo/repo/projeto-tcc/build/CMakeFiles/rebuild_cache.dir
+/home/gustavo/repo/projeto-tcc/build/CMakeFiles/list_install_components.dir
+/home/gustavo/repo/projeto-tcc/build/CMakeFiles/install.dir
+/home/gustavo/repo/projeto-tcc/build/CMakeFiles/install/local.dir
+/home/gustavo/repo/projeto-tcc/build/CMakeFiles/install/strip.dir

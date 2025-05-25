@@ -37,3 +37,10 @@ If you have any problem, you can check the log files in the test folder. Otherwi
 $ cd $DELIA
 $ sh $DELIA/test/REMOVELOGS.sh $DELIA
 ```
+
+## Credits
+
+This project is based on the original [DeLIA fault tolerance library](https://gitlab.com/lappsufrn/delia.git), developed by the LApps research group at UFRN.
+
+We would like to thank the original authors for their contribution to fault-tolerant systems in distributed computing. For more information, refer to the official documentation: [https://lappsufrn.gitlab.io/delia/index.html](https://lappsufrn.gitlab.io/delia/index.html).
+

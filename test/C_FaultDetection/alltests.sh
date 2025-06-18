@@ -103,6 +103,55 @@ else
     exit 125
 fi
 
+TRIGGER_RECEIVED="NODE_4_OK"
+if $(grep -q $TRIGGER_RECEIVED $OUTPUT_FILE_COMPILE)
+then
+    echo "${HITCOLOR}=> Node 4 receives trigger"
+else
+    echo "${ERRORCOLOR}=> Node 4 does not receive trigger" 1>&2
+    exit 125
+fi
+TRIGGER_RECEIVED="NODE_5_OK"
+if $(grep -q $TRIGGER_RECEIVED $OUTPUT_FILE_COMPILE)
+then
+    echo "${HITCOLOR}=> Node 5 receives trigger"
+else
+    echo "${ERRORCOLOR}=> Node 5 does not receive trigger" 1>&2
+    exit 125
+fi
+TRIGGER_RECEIVED="NODE_6_OK"
+if $(grep -q $TRIGGER_RECEIVED $OUTPUT_FILE_COMPILE)
+then
+    echo "${HITCOLOR}=> Node 6 receives trigger"
+else
+    echo "${ERRORCOLOR}=> Node 6 does not receive trigger" 1>&2
+    exit 125
+fi
+TRIGGER_RECEIVED="NODE_7_OK"
+if $(grep -q $TRIGGER_RECEIVED $OUTPUT_FILE_COMPILE)
+then
+    echo "${HITCOLOR}=> Node 7 receives trigger"
+else
+    echo "${ERRORCOLOR}=> Node 7 does not receive trigger" 1>&2
+    exit 125
+fi
+TRIGGER_RECEIVED="NODE_8_OK"
+if $(grep -q $TRIGGER_RECEIVED $OUTPUT_FILE_COMPILE)
+then
+    echo "${HITCOLOR}=> Node 8 receives trigger"
+else
+    echo "${ERRORCOLOR}=> Node 8 does not receive trigger" 1>&2
+    exit 125
+fi
+TRIGGER_RECEIVED="NODE_9_OK"
+if $(grep -q $TRIGGER_RECEIVED $OUTPUT_FILE_COMPILE)
+then
+    echo "${HITCOLOR}=> Node 9 receives trigger"
+else
+    echo "${ERRORCOLOR}=> Node 9 does not receive trigger" 1>&2
+    exit 125
+fi
+
 ## ====================================
 ##    WITH TRIGGER SIGNAL TEST ALL
 ## ====================================
@@ -154,6 +203,60 @@ else
     exit 125
 fi
 
+DETECT_NODE="RANK_4_RECEIVED_SIGNAL"
+if $(grep -q $DETECT_NODE $OUTPUT_FILE_COMPILE)
+then
+    echo "${HITCOLOR}=> Rank 4 receives SIGTERM"
+else
+    echo "${ERRORCOLOR}=> Rank 4 does not receive SIGTERM" 1>&2
+    exit 125
+fi
+
+DETECT_NODE="RANK_5_RECEIVED_SIGNAL"
+if $(grep -q $DETECT_NODE $OUTPUT_FILE_COMPILE)
+then
+    echo "${HITCOLOR}=> Rank 5 receives SIGTERM"
+else
+    echo "${ERRORCOLOR}=> Rank 5 does not receive SIGTERM" 1>&2
+    exit 125
+fi
+
+DETECT_NODE="RANK_6_RECEIVED_SIGNAL"
+if $(grep -q $DETECT_NODE $OUTPUT_FILE_COMPILE)
+then
+    echo "${HITCOLOR}=> Rank 6 receives SIGTERM"
+else
+    echo "${ERRORCOLOR}=> Rank 6 does not receive SIGTERM" 1>&2
+    exit 125
+fi
+
+DETECT_NODE="RANK_7_RECEIVED_SIGNAL"
+if $(grep -q $DETECT_NODE $OUTPUT_FILE_COMPILE)
+then
+    echo "${HITCOLOR}=> Rank 7 receives SIGTERM"
+else
+    echo "${ERRORCOLOR}=> Rank 7 does not receive SIGTERM" 1>&2
+    exit 125
+fi
+
+DETECT_NODE="RANK_8_RECEIVED_SIGNAL"
+if $(grep -q $DETECT_NODE $OUTPUT_FILE_COMPILE)
+then
+    echo "${HITCOLOR}=> Rank 8 receives SIGTERM"
+else
+    echo "${ERRORCOLOR}=> Rank 8 does not receive SIGTERM" 1>&2
+    exit 125
+fi
+
+DETECT_NODE="RANK_9_RECEIVED_SIGNAL"
+if $(grep -q $DETECT_NODE $OUTPUT_FILE_COMPILE)
+then
+    echo "${HITCOLOR}=> Rank 9 receives SIGTERM"
+else
+    echo "${ERRORCOLOR}=> Rank 9 does not receive SIGTERM" 1>&2
+    exit 125
+fi
+
 ## ====================================
 ##   WITH TRIGGER SIGNAL TEST FOR 0
 ## ====================================
@@ -202,5 +305,59 @@ then
     echo "${HITCOLOR}=> Rank 3 receives trigger from node 0"
 else
     echo "${ERRORCOLOR}=> Rank 3 does not receive trigger from node 0" 1>&2
+    exit 125
+fi
+
+DETECT_NODE="RANK_4_RECEIVED_SIGNAL"
+if $(grep -q $DETECT_NODE $OUTPUT_FILE_COMPILE)
+then
+    echo "${HITCOLOR}=> Rank 4 receives trigger from node 0"
+else
+    echo "${ERRORCOLOR}=> Rank 4 does not receive trigger from node 0" 1>&2
+    exit 125
+fi
+
+DETECT_NODE="RANK_5_RECEIVED_SIGNAL"
+if $(grep -q $DETECT_NODE $OUTPUT_FILE_COMPILE)
+then
+    echo "${HITCOLOR}=> Rank 5 receives trigger from node 0"
+else
+    echo "${ERRORCOLOR}=> Rank 5 does not receive trigger from node 0" 1>&2
+    exit 125
+fi
+
+DETECT_NODE="RANK_6_RECEIVED_SIGNAL"
+if $(grep -q $DETECT_NODE $OUTPUT_FILE_COMPILE)
+then
+    echo "${HITCOLOR}=> Rank 6 receives trigger from node 0"
+else
+    echo "${ERRORCOLOR}=> Rank 6 does not receive trigger from node 0" 1>&2
+    exit 125
+fi
+
+DETECT_NODE="RANK_7_RECEIVED_SIGNAL"
+if $(grep -q $DETECT_NODE $OUTPUT_FILE_COMPILE)
+then
+    echo "${HITCOLOR}=> Rank 7 receives trigger from node 0"
+else
+    echo "${ERRORCOLOR}=> Rank 7 does not receive trigger from node 0" 1>&2
+    exit 125
+fi
+
+DETECT_NODE="RANK_8_RECEIVED_SIGNAL"
+if $(grep -q $DETECT_NODE $OUTPUT_FILE_COMPILE)
+then
+    echo "${HITCOLOR}=> Rank 8 receives trigger from node 0"
+else
+    echo "${ERRORCOLOR}=> Rank 8 does not receive trigger from node 0" 1>&2
+    exit 125
+fi
+
+DETECT_NODE="RANK_9_RECEIVED_SIGNAL"
+if $(grep -q $DETECT_NODE $OUTPUT_FILE_COMPILE)
+then
+    echo "${HITCOLOR}=> Rank 9 receives trigger from node 0"
+else
+    echo "${ERRORCOLOR}=> Rank 9 does not receive trigger from node 0" 1>&2
     exit 125
 fi

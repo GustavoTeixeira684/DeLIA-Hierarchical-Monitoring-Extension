@@ -1,0 +1,126 @@
+removed './build/CMakeCache.txt'
+removed directory './build/CMakeFiles/pkgRedirects'
+removed './build/CMakeFiles/CMakeConfigureLog.yaml'
+removed './build/CMakeFiles/FindMPI/test_mpi_C.bin'
+removed './build/CMakeFiles/FindMPI/test_mpi_CXX.bin'
+removed directory './build/CMakeFiles/FindMPI'
+removed './build/CMakeFiles/libLC.dir/Settings.cpp.o'
+removed './build/CMakeFiles/libLC.dir/Settings.cpp.o.d'
+removed './build/CMakeFiles/libLC.dir/LDClass.cpp.o'
+removed './build/CMakeFiles/libLC.dir/cmake_clean_target.cmake'
+removed './build/CMakeFiles/libLC.dir/depend.make'
+removed './build/CMakeFiles/libLC.dir/LDClass.cpp.o.d'
+removed './build/CMakeFiles/libLC.dir/link.txt'
+removed './build/CMakeFiles/libLC.dir/cmake_clean.cmake'
+removed './build/CMakeFiles/libLC.dir/compiler_depend.internal'
+removed './build/CMakeFiles/libLC.dir/flags.make'
+removed './build/CMakeFiles/libLC.dir/compiler_depend.ts'
+removed './build/CMakeFiles/libLC.dir/progress.make'
+removed './build/CMakeFiles/libLC.dir/build.make'
+removed './build/CMakeFiles/libLC.dir/DependInfo.cmake'
+removed './build/CMakeFiles/libLC.dir/compiler_depend.make'
+removed directory './build/CMakeFiles/libLC.dir'
+removed './build/CMakeFiles/TargetDirectories.txt'
+removed './build/CMakeFiles/Makefile2'
+removed './build/CMakeFiles/CMakeDirectoryInformation.cmake'
+removed './build/CMakeFiles/cmake.check_cache'
+removed directory './build/CMakeFiles/CMakeScratch'
+removed './build/CMakeFiles/Makefile.cmake'
+removed './build/CMakeFiles/3.28.3/CMakeDetermineCompilerABI_C.bin'
+removed './build/CMakeFiles/3.28.3/CMakeSystem.cmake'
+removed './build/CMakeFiles/3.28.3/CMakeDetermineCompilerABI_CXX.bin'
+removed './build/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.cpp'
+removed './build/CMakeFiles/3.28.3/CompilerIdCXX/a.out'
+removed directory './build/CMakeFiles/3.28.3/CompilerIdCXX/tmp'
+removed directory './build/CMakeFiles/3.28.3/CompilerIdCXX'
+removed './build/CMakeFiles/3.28.3/CompilerIdC/CMakeCCompilerId.c'
+removed './build/CMakeFiles/3.28.3/CompilerIdC/a.out'
+removed directory './build/CMakeFiles/3.28.3/CompilerIdC/tmp'
+removed directory './build/CMakeFiles/3.28.3/CompilerIdC'
+removed './build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake'
+removed './build/CMakeFiles/3.28.3/CMakeCCompiler.cmake'
+removed directory './build/CMakeFiles/3.28.3'
+removed './build/CMakeFiles/EXEC_TEST.dir/Main.cpp.o'
+removed './build/CMakeFiles/EXEC_TEST.dir/depend.make'
+removed './build/CMakeFiles/EXEC_TEST.dir/link.txt'
+removed './build/CMakeFiles/EXEC_TEST.dir/Main.cpp.o.d'
+removed './build/CMakeFiles/EXEC_TEST.dir/cmake_clean.cmake'
+removed './build/CMakeFiles/EXEC_TEST.dir/compiler_depend.internal'
+removed './build/CMakeFiles/EXEC_TEST.dir/flags.make'
+removed './build/CMakeFiles/EXEC_TEST.dir/compiler_depend.ts'
+removed './build/CMakeFiles/EXEC_TEST.dir/progress.make'
+removed './build/CMakeFiles/EXEC_TEST.dir/build.make'
+removed './build/CMakeFiles/EXEC_TEST.dir/DependInfo.cmake'
+removed './build/CMakeFiles/EXEC_TEST.dir/compiler_depend.make'
+removed directory './build/CMakeFiles/EXEC_TEST.dir'
+removed './build/CMakeFiles/progress.marks'
+removed directory './build/CMakeFiles'
+removed './build/EXEC_TEST'
+removed './build/Makefile'
+removed './build/cmake_install.cmake'
+removed './build/install_manifest.txt'
+removed './build/liblibLC.a'
+DELETING BUILD
+removed './data/DeLIA_Iteration_Localnode_0.txt'
+removed './data/DeLIA_Iteration_Localnode_1.txt'
+removed './data/DeLIA_Iteration_Localnode_2.txt'
+removed './data/DeLIA_Iteration_Localnode_3.txt'
+removed './data/DeLIA_Iteration_Localnode_4.txt'
+removed './data/DeLIA_Iteration_Localnode_5.txt'
+removed './data/DeLIA_Iteration_Localnode_6.txt'
+removed './data/DeLIA_Iteration_Localnode_7.txt'
+removed './data/DeLIA_Iteration_Localnode_8.txt'
+removed './data/DeLIA_Iteration_Localnode_9.txt'
+removed './data/DeLIA_Local_node_0_gIteration_9_local_data_example.bin'
+removed './data/DeLIA_Local_node_1_gIteration_9_local_data_example.bin'
+removed './data/DeLIA_Local_node_2_gIteration_9_local_data_example.bin'
+removed './data/DeLIA_Local_node_3_gIteration_9_local_data_example.bin'
+removed './data/DeLIA_Local_node_4_gIteration_9_local_data_example.bin'
+removed './data/DeLIA_Local_node_5_gIteration_9_local_data_example.bin'
+removed './data/DeLIA_Local_node_6_gIteration_9_local_data_example.bin'
+removed './data/DeLIA_Local_node_7_gIteration_9_local_data_example.bin'
+removed './data/DeLIA_Local_node_8_gIteration_9_local_data_example.bin'
+removed './data/DeLIA_Local_node_9_gIteration_9_local_data_example.bin'
+removed './data/settings.bin'
+DELETING Data
+removed './DeLIA_lib/DeLIAConfig-noconfig.cmake'
+removed './DeLIA_lib/DeLIAConfig.cmake'
+removed './DeLIA_lib/include/IDataGlobal.h'
+removed './DeLIA_lib/include/IDataSettings.h'
+removed './DeLIA_lib/include/DeLIA.h'
+removed './DeLIA_lib/include/IDataLocal.h'
+removed directory './DeLIA_lib/include'
+removed './DeLIA_lib/libDeLIA.a'
+DELETING DeLIA_lib
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/mpicc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/mpic++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- MPI 3.1 found & enabled.
+-- Using DeLIA
+-- Find /home/gustavo/repo/DeLIA-Hierarchical-Monitoring-Extension/test/C_FaultDetection/project
+-- Configuring done (1.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/gustavo/repo/DeLIA-Hierarchical-Monitoring-Extension/test/C_FaultDetection/project/build
+[ 20%] Building CXX object CMakeFiles/libLC.dir/LDClass.cpp.o
+[ 40%] Building CXX object CMakeFiles/libLC.dir/Settings.cpp.o
+[ 60%] Linking CXX static library liblibLC.a
+[ 60%] Built target libLC
+[ 80%] Building CXX object CMakeFiles/EXEC_TEST.dir/Main.cpp.o
+[100%] Linking CXX executable EXEC_TEST
+[100%] Built target EXEC_TEST
+[ 60%] Built target libLC
+[100%] Built target EXEC_TEST
+Install the project...
+-- Install configuration: ""
+-- Installing: /home/gustavo/repo/DeLIA-Hierarchical-Monitoring-Extension/test/C_FaultDetection/project/bin/EXEC_TEST
+
+CI TEST

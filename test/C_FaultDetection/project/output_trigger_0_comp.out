@@ -1,0 +1,40 @@
+removed './data/DeLIA_Iteration_Localnode_0.txt'
+removed './data/DeLIA_Iteration_Localnode_1.txt'
+removed './data/DeLIA_Iteration_Localnode_2.txt'
+removed './data/DeLIA_Iteration_Localnode_3.txt'
+removed './data/DeLIA_Iteration_Localnode_4.txt'
+removed './data/DeLIA_Iteration_Localnode_5.txt'
+removed './data/DeLIA_Iteration_Localnode_6.txt'
+removed './data/DeLIA_Iteration_Localnode_7.txt'
+removed './data/DeLIA_Iteration_Localnode_8.txt'
+removed './data/DeLIA_Iteration_Localnode_9.txt'
+removed './data/DeLIA_Local_node_0_gIteration_9_local_data_example.bin'
+removed './data/DeLIA_Local_node_1_gIteration_9_local_data_example.bin'
+removed './data/DeLIA_Local_node_2_gIteration_9_local_data_example.bin'
+removed './data/DeLIA_Local_node_3_gIteration_9_local_data_example.bin'
+removed './data/DeLIA_Local_node_4_gIteration_9_local_data_example.bin'
+removed './data/DeLIA_Local_node_5_gIteration_9_local_data_example.bin'
+removed './data/DeLIA_Local_node_6_gIteration_9_local_data_example.bin'
+removed './data/DeLIA_Local_node_7_gIteration_9_local_data_example.bin'
+removed './data/DeLIA_Local_node_8_gIteration_9_local_data_example.bin'
+removed './data/DeLIA_Local_node_9_gIteration_9_local_data_example.bin'
+removed './data/settings.bin'
+DELETING Data
+CI TEST
+PID TTY TIME CMD 52544 pts/1 00:00:00 EXEC_TEST 52545 pts/1 00:00:00 EXEC_TEST 52546 pts/1 00:00:00 EXEC_TEST 52547 pts/1 00:00:00 EXEC_TEST 52551 pts/1 00:00:00 EXEC_TEST 52553 pts/1 00:00:00 EXEC_TEST 52556 pts/1 00:00:00 EXEC_TEST 52560 pts/1 00:00:00 EXEC_TEST 52563 pts/1 00:00:00 EXEC_TEST 52566 pts/1 00:00:00 EXEC_TEST
+aqui
+52544
+matando o processo
+52544
+matando o processo pela segunda vez
+52544
+RANK_0_RECEIVED_SIGNAL
+RANK_1_RECEIVED_SIGNAL
+RANK_2_RECEIVED_SIGNAL
+RANK_3_RECEIVED_SIGNAL
+RANK_4_RECEIVED_SIGNAL
+RANK_5_RECEIVED_SIGNAL
+RANK_6_RECEIVED_SIGNAL
+RANK_7_RECEIVED_SIGNAL
+RANK_8_RECEIVED_SIGNAL
+RANK_9_RECEIVED_SIGNAL

@@ -1,0 +1,8 @@
+/home/gustavo/repo/DeLIA-Hierarchical-Monitoring-Extension/DeLIA_lib/libDeLIA.a
+/home/gustavo/repo/DeLIA-Hierarchical-Monitoring-Extension/DeLIA_lib/include/IDataGlobal.h
+/home/gustavo/repo/DeLIA-Hierarchical-Monitoring-Extension/DeLIA_lib/include/IDataSettings.h
+/home/gustavo/repo/DeLIA-Hierarchical-Monitoring-Extension/DeLIA_lib/include/DeLIA.h
+/home/gustavo/repo/DeLIA-Hierarchical-Monitoring-Extension/DeLIA_lib/include/IDataLocal.h
+/home/gustavo/repo/DeLIA-Hierarchical-Monitoring-Extension/DeLIA_lib/libDeLIA.a
+/home/gustavo/repo/DeLIA-Hierarchical-Monitoring-Extension/DeLIA_lib/DeLIAConfig.cmake
+/home/gustavo/repo/DeLIA-Hierarchical-Monitoring-Extension/DeLIA_lib/DeLIAConfig-noconfig.cmake

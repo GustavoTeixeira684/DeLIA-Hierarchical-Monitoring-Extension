@@ -1,0 +1,325 @@
+ID: 1 É servidor com clientes: 4 7 2 
+ID: 2 É servidor com clientes: 5 8 0 
+============================================
+-----	 FAULT TOLERANCE 	-----
+ FT_FOLDER 				 = ./data
+ CHECKPOINTING_TIME_GLOBAL 		 = -1
+ CHECKPOINTING_TIME_LOCAL 		 = 2
+ CHECKPOINTING_TIME_DIFF_LOCAL 		 = 1
+ CHECKPOINTING_GLOBAL_ITERATION 	 = -1
+ TIME_SHARING_LOCAL_DATA_NEIGHBOR 	 = -1
+ CHECKPOINTING_LOCAL_RECENT 		 = 1
+ WORKLOAD_SCHEDULER 			  = DS
+ WORKLOAD_SCHEDULER_LEADER 		 = -1
+ TRIGGER_SIGNAL 			 = 1
+ TRIGGER_HEARTBEAT_MONITORING:
+	 TYPE 				 = LEADER
+	 TIME_MAX_WAIT			 = 20
+	 SLEEP_THREAD_TIME		 = 1
+============================================
+ID: 0 É servidor com clientes: 3 6 9 1 
+Can not recover last checkpointing global
+============================================
+-----	 FAULT TOLERANCE 	-----
+-----	 Saving the current settings 	-----
+============================================
+Can not recover last local checkpointing
+TIME_TO_SAVE_LOCAL = 240[ns]
+TIME_TO_SAVE_LOCAL = 30[ns]
+TIME_TO_SAVE_LOCAL = 30[ns]
+TIME_TO_SAVE_LOCAL = 30[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 30[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 30[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+-----	 DeLIA Global Data is not actived 	-----
+TIME_TO_SAVE_GLOBAL = 4290[ns]
+Can not recover last local checkpointing
+TIME_TO_SAVE_LOCAL = 650[ns]
+TIME_TO_SAVE_LOCAL = 80[ns]
+TIME_TO_SAVE_LOCAL = 60[ns]
+TIME_TO_SAVE_LOCAL = 60[ns]
+TIME_TO_SAVE_LOCAL = 70[ns]
+TIME_TO_SAVE_LOCAL = 70[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 60[ns]
+-----	 DeLIA Global Data is not actived 	-----
+TIME_TO_SAVE_GLOBAL = 7390[ns]
+Can not recover last local checkpointing
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 0			-----
+-----	 Iteration: 2		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 5			-----
+-----	 Iteration: 2		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 7			-----
+-----	 Iteration: 2		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 4			-----
+-----	 Iteration: 2		-----
+TIME_TO_SAVE_LOCAL = 3895576[ns]
+TIME_TO_SAVE_LOCAL = 190[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 80[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 90[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 2			-----
+-----	 Iteration: 2============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 1			-----
+-----	 Iteration: 2		-----
+		-----
+============================================
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 3			-----
+-----	 Iteration: 2		-----
+-----	============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 6			-----
+-----	 Iteration: 2		-----
+ DeLIA::SaveLocalData 	-----
+-----============================================
+-----	 DeLIA::SaveLocalData 	-----
+	-----	 ID: 8			-----
+-----	 Iteration: 2		-----
+ ID: 9			-----
+-----	 Iteration: 2		-----
+-----	 DeLIA Global Data is not actived 	-----
+TIME_TO_SAVE_GLOBAL = 6970[ns]
+Can not recover last local checkpointing
+TIME_TO_SAVE_LOCAL = 1160[ns]
+TIME_TO_SAVE_LOCAL = 80[ns]
+TIME_TO_SAVE_LOCAL = 70[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 100[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+-----	 DeLIA Global Data is not actived 	-----
+TIME_TO_SAVE_GLOBAL = 4640[ns]
+Can not recover last local checkpointing
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 8			-----
+-----	 Iteration: 4		-----
+============================================
+-----============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 6			-----
+-----	 Iteration: 4		-----
+	 DeLIA::SaveLocalData 	-----
+-----	 ID: 5			-----
+-----	 Iteration: 4		-----
+============================================
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 2			-----
+-----	 Iteration: 4		-----
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 3			-----
+-----	 Iteration: 4		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 0			-----
+-----	 Iteration: 4		-----
+TIME_TO_SAVE_LOCAL = 4811690[ns]
+TIME_TO_SAVE_LOCAL = 270[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 70[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 60[ns]
+TIME_TO_SAVE_LOCAL = 60[ns]
+TIME_TO_SAVE_LOCAL = 30[ns]
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 4			-----
+-----	 Iteration: 4		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 9			-----
+-----	 Iteration: 4		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 7			-----
+-----	 Iteration: 4		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 1			-----
+-----	 Iteration: 4		-----
+-----	 DeLIA Global Data is not actived 	-----
+TIME_TO_SAVE_GLOBAL = 6200[ns]
+Can not recover last local checkpointing
+TIME_TO_SAVE_LOCAL = 70[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 30[ns]
+TIME_TO_SAVE_LOCAL = 30[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 30[ns]
+TIME_TO_SAVE_LOCAL = 30[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 30[ns]
+-----	 DeLIA Global Data is not actived 	-----
+TIME_TO_SAVE_GLOBAL = 6350[ns]
+Can not recover last local checkpointing
+TIME_TO_SAVE_LOCAL = 700[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+-----	 DeLIA Global Data is not actived 	-----
+TIME_TO_SAVE_GLOBAL = 4890[ns]
+Can not recover last local checkpointing
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 1			-----
+-----	 Iteration: 7		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 8			-----
+-----	 Iteration: 7		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 5			-----
+-----	 Iteration: 7		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 9			-----
+-----	 Iteration: 7		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 7			-----
+-----	 Iteration: 7		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 2			-----
+-----	 Iteration: 7		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 0			-----
+-----	 Iteration: 7		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 6			-----
+-----	 Iteration: 7		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 3			-----
+-----	 Iteration: 7		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 4			-----
+-----	 Iteration: 7		-----
+TIME_TO_SAVE_LOCAL = 3782695[ns]
+TIME_TO_SAVE_LOCAL = 140[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 60[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+-----	 DeLIA Global Data is not actived 	-----
+TIME_TO_SAVE_GLOBAL = 6080[ns]
+Can not recover last local checkpointing
+TIME_TO_SAVE_LOCAL = 440[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 60[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+-----	 DeLIA Global Data is not actived 	-----
+TIME_TO_SAVE_GLOBAL = 3940[ns]
+Can not recover last local checkpointing
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 4			-----
+-----	 Iteration: 9		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 7			-----
+-----	 Iteration: 9		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 0			-----
+-----	 Iteration: 9-----	 ID: 1			-----
+-----	 Iteration: 9		-----
+		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 8			-----
+-----============================================
+-----	 DeLIA::SaveLocalData 	-----
+	 Iteration: 9		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	-----	 ID: 3			-----
+-----	 Iteration: 9		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 6			-----
+ ID: 2			-----
+-----	 Iteration: 9		-----
+-----	 Iteration: 9		-----
+TIME_TO_SAVE_LOCAL = 3673925[ns]
+TIME_TO_SAVE_LOCAL = 270[ns]
+TIME_TO_SAVE_LOCAL = 80[ns]
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 5			-----
+-----	 Iteration: 9		-----
+TIME_TO_SAVE_LOCAL = 70[ns]
+TIME_TO_SAVE_LOCAL = 90[ns]
+TIME_TO_SAVE_LOCAL = 90[ns]
+TIME_TO_SAVE_LOCAL = 120[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 80[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 9			-----
+-----	 Iteration: 9		-----
+-----	 DeLIA Global Data is not actived 	-----
+TIME_TO_SAVE_GLOBAL = 5100[ns]
+TEST FINALIZED OK
+TEST FINALIZED OK
+TEST FINALIZED OK
+TEST FINALIZED OK
+TEST FINALIZED OK
+TEST FINALIZED OK
+TEST FINALIZED OK
+TEST FINALIZED OK
+TEST FINALIZED OK
+TEST FINALIZED OK

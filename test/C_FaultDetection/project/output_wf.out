@@ -1,0 +1,537 @@
+============================================
+-----	 FAULT TOLERANCE 	-----
+ FT_FOLDER 				 = ./data
+ CHECKPOINTING_TIME_GLOBAL 		 = -1
+ CHECKPOINTING_TIME_LOCAL 		 = 2
+ CHECKPOINTING_TIME_DIFF_LOCAL 		 = 1
+ CHECKPOINTING_GLOBAL_ITERATION 	 = 5
+ID: 2 É servidor com clientes: 5 8 0 
+ TIME_SHARING_LOCAL_DATA_NEIGHBOR 	 = -1
+ CHECKPOINTING_LOCAL_RECENT 		 = 1
+ WORKLOAD_SCHEDULER 			  = DS
+ WORKLOAD_SCHEDULER_LEADER 		 = -1
+ TRIGGER_SIGNAL 			 = 0
+ TRIGGER_HEARTBEAT_MONITORING:
+	 TYPE 				 = LEADER
+	 TIME_MAX_WAIT			 = 20
+ID: 1 É servidor com clientes: 4 7 2 
+	 SLEEP_THREAD_TIME		 = 1
+============================================
+ID: 0 É servidor com clientes: 3 6 9 1 
+Can not recover last checkpointing global
+============================================
+-----	 FAULT TOLERANCE 	-----
+-----	 Saving the current settings 	-----
+============================================
+Can not recover last local checkpointing
+TIME_TO_SAVE_LOCAL = 330[ns]
+TIME_TO_SAVE_LOCAL = 90[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 30[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+-----	 Global data will not be saved 	-----
+TIME_TO_SAVE_GLOBAL = 15160[ns]
+Can not recover last local checkpointing
+TIME_TO_SAVE_LOCAL = 580[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+-----	 Global data will not be saved 	-----
+TIME_TO_SAVE_GLOBAL = 5570[ns]
+Can not recover last local checkpointing
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 1			-----
+-----	 Iteration: 2		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 5			-----
+-----	 Iteration: 2		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 3			-----
+-----	 Iteration: 2		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 6			-----
+-----	 Iteration: 2		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 9			-----
+-----	 Iteration: 2		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 0			-----
+-----	 Iteration: 2		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 8			-----
+-----	 Iteration: 2		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 4			-----
+-----	 Iteration: 2		-----
+TIME_TO_SAVE_LOCAL = 4171366[ns]
+TIME_TO_SAVE_LOCAL = 260[ns]
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 30[ns]
+TIME_TO_SAVE_LOCAL = 30[ns]
+TIME_TO_SAVE_LOCAL = 30[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 2			-----
+-----	 Iteration: 2		-----
+	 ID: 7			-----
+-----	 Iteration: 2		-----
+-----	 Global data will not be saved 	-----
+TIME_TO_SAVE_GLOBAL = 3450[ns]
+Can not recover last local checkpointing
+TIME_TO_SAVE_LOCAL = 770[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+-----	 Global data will not be saved 	-----
+TIME_TO_SAVE_GLOBAL = 5590[ns]
+Can not recover last local checkpointing
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 7			-----
+-----	 Iteration: 4		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 8			-----
+-----	 Iteration: 4		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 4			-----
+-----	 Iteration: 4		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 5			-----
+-----	 Iteration: 4		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 9			-----
+-----	 Iteration: 4		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 1			-----
+-----	 Iteration: 4		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 3			-----
+-----	 Iteration: 4		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 2			-----
+-----	 Iteration: 4		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 0			-----
+-----	 Iteration: 4		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 6			-----
+-----	 Iteration: 4		-----
+TIME_TO_SAVE_LOCAL = 4623627[ns]
+TIME_TO_SAVE_LOCAL = 220[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 70[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 40[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+============================================
+-----	 DeLIA::SaveGlobalData 	-----
+-----	 Iteration: 5		-----
+-----	 Data from LDClass saved by 0
+============================================
+TIME_TO_SAVE_GLOBAL = 86641[ns]
+Can not recover last local checkpointing
+TIME_TO_SAVE_LOCAL = 1320[ns]
+TIME_TO_SAVE_LOCAL = 110[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 50[ns]
+TIME_TO_SAVE_LOCAL = 70[ns]
+TIME_TO_SAVE_LOCAL = 60[ns]
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 2			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 0			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 5			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 6			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 3			-----
+-----============================================
+-----	 DeLIA::SaveLocalData 	-----
+	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 8			-----
+-----	 Iteration: 5		-----
+-----	 ID: 9			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 7			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 4			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 2			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 0			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 4			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 0			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 7			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 5			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 3			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 6			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 8			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 9			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 2			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 0			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 7			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 5			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 4			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 6			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 8			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 9			============================================
+-----	-----
+-----	 Iteration: 5		-----
+ DeLIA::SaveLocalData 	-----
+-----	 ID: 3			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 0			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 2			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 7			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 6			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 5			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 0			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 4			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 0			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 8			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 3			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 9			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 0			-----
+-----	 Iteration: 5		-----
+-----	 ID: 2			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 7			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 6			-----
+-----	 Iteration: 5		-----
+============================================
+-----============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 4			-----
+-----	 Iteration: 5		-----
+	 DeLIA::SaveLocalData 	-----
+-----	 ID: 5			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 8			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 3			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 9			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 2			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 0			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 6			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 4			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 0			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 5			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 7			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 8			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 9			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 3			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 0			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 2			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 2			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 6			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 8			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 3			-----
+-----	 Iteration: 5		-----
+============================================
+-----============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 5			-----
+-----	 Iteration: 5		-----
+	 DeLIA::SaveLocalData 	-----
+-----	 ID: 7			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 9			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 4			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 0			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 2			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 2			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 5			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 9			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 8			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 7			-----
+-----	 Iteration: 5		-----
+	 ID: 4			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 6			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 3			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 2			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 0			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 5			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 9			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 4			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 7			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 6			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 8			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 0			-----
+-----	 Iteration: 5		-----
+============================================
+-----	 DeLIA::SaveLocalData 	-----
+-----	 ID: 3			-----
+-----	 Iteration: 5		-----

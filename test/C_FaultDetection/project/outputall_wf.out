@@ -1,0 +1,36 @@
+removed './data/DeLIA_Iteration_Localnode_0.txt'
+removed './data/DeLIA_Iteration_Localnode_1.txt'
+removed './data/DeLIA_Iteration_Localnode_2.txt'
+removed './data/DeLIA_Iteration_Localnode_3.txt'
+removed './data/DeLIA_Local_node_0_gIteration_8_local_data_example.bin'
+removed './data/DeLIA_Local_node_1_gIteration_8_local_data_example.bin'
+removed './data/DeLIA_Local_node_2_gIteration_8_local_data_example.bin'
+removed './data/DeLIA_Local_node_3_gIteration_8_local_data_example.bin'
+removed './data/DeLIA_gIteration.txt'
+removed './data/global_data_example.bin'
+removed './data/settings.bin'
+DELETING Data
+CI TEST
+PID TTY TIME CMD 50861 pts/1 00:00:00 EXEC_TEST 50862 pts/1 00:00:00 EXEC_TEST 50863 pts/1 00:00:00 EXEC_TEST 50865 pts/1 00:00:00 EXEC_TEST 50867 pts/1 00:00:00 EXEC_TEST 50870 pts/1 00:00:00 EXEC_TEST 50874 pts/1 00:00:00 EXEC_TEST 50876 pts/1 00:00:00 EXEC_TEST 50879 pts/1 00:00:00 EXEC_TEST 50883 pts/1 00:00:00 EXEC_TEST
+1 50862 1
+    PID TTY          TIME CMD
+  50861 pts/1    00:00:24 EXEC_TEST
+  50862 pts/1    00:00:00 EXEC_TEST
+  50863 pts/1    00:00:24 EXEC_TEST
+  50865 pts/1    00:00:24 EXEC_TEST
+  50867 pts/1    00:00:24 EXEC_TEST
+  50870 pts/1    00:00:24 EXEC_TEST
+  50874 pts/1    00:00:24 EXEC_TEST
+  50876 pts/1    00:00:24 EXEC_TEST
+  50879 pts/1    00:00:24 EXEC_TEST
+  50883 pts/1    00:00:24 EXEC_TEST
+LEADER_DETECT
+NODE_2_OK
+NODE_3_OK
+NODE_4_OK
+NODE_5_OK
+NODE_6_OK
+NODE_7_OK
+NODE_8_OK
+NODE_9_OK
+VAI DA SIGKILL

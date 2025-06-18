@@ -1,0 +1,76 @@
+PASSOU AQUI FDP!
+============================================
+-----	 FAULT TOLERANCE 	-----
+ FT_FOLDER 				 = ./data
+ CHECKPOINTING_TIME_GLOBAL 		 = -1
+ CHECKPOINTING_TIME_LOCAL 		 = -1
+ CHECKPOINTING_TIME_DIFF_LOCAL 		 = -1
+ CHECKPOINTING_GLOBAL_ITERATION 	 = 1
+ TIME_SHARING_LOCAL_DATA_NEIGHBOR 	 = -1
+ CHECKPOINTING_LOCAL_RECENT 		 = 1
+ WORKLOAD_SCHEDULER 			  = DS
+ WORKLOAD_SCHEDULER_LEADER 		 = -1
+ TRIGGER_SIGNAL 			 = 0
+ TRIGGER_HEARTBEAT_MONITORING:
+	 TYPE 				 = 
+	 TIME_MAX_WAIT			 = -1
+	 SLEEP_THREAD_TIME		 = -1
+============================================
+ID: 0 É servidor com clientes: 0 
+Can not recover last checkpointing global
+============================================
+-----	 FAULT TOLERANCE 	-----
+-----	 Saving the current settings 	-----
+============================================
+0
+============================================
+-----	 DeLIA::SaveGlobalData 	-----
+-----	 Iteration: 1		-----
+============================================
+TIME_TO_SAVE_GLOBAL = 57010[ns]
+============================================
+-----	 DeLIA::SaveGlobalData 	-----
+-----	 Iteration: 2		-----
+============================================
+TIME_TO_SAVE_GLOBAL = 161560[ns]
+============================================
+-----	 DeLIA::SaveGlobalData 	-----
+-----	 Iteration: 3		-----
+============================================
+TIME_TO_SAVE_GLOBAL = 202730[ns]
+============================================
+-----	 DeLIA::SaveGlobalData 	-----
+-----	 Iteration: 4		-----
+============================================
+TIME_TO_SAVE_GLOBAL = 197271[ns]
+============================================
+-----	 DeLIA::SaveGlobalData 	-----
+-----	 Iteration: 5		-----
+============================================
+TIME_TO_SAVE_GLOBAL = 184231[ns]
+============================================
+-----	 DeLIA::SaveGlobalData 	-----
+-----	 Iteration: 6		-----
+============================================
+TIME_TO_SAVE_GLOBAL = 181741[ns]
+============================================
+-----	 DeLIA::SaveGlobalData 	-----
+-----	 Iteration: 7		-----
+============================================
+TIME_TO_SAVE_GLOBAL = 199141[ns]
+============================================
+-----	 DeLIA::SaveGlobalData 	-----
+-----	 Iteration: 8		-----
+============================================
+TIME_TO_SAVE_GLOBAL = 173830[ns]
+============================================
+-----	 DeLIA::SaveGlobalData 	-----
+-----	 Iteration: 9		-----
+============================================
+TIME_TO_SAVE_GLOBAL = 202511[ns]
+============================================
+-----	 DeLIA::SaveGlobalData 	-----
+-----	 Iteration: 10		-----
+============================================
+TIME_TO_SAVE_GLOBAL = 220420[ns]
+TEST FINALIZED OK

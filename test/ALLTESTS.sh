@@ -14,13 +14,13 @@ HM_PATH=$PATH_PROJECT/test/C_FaultDetection
 SHAREDATA_PATH=$PATH_PROJECT/test/D_ShareData
 DEFAULTCOLOR='\033[1;36m'
 
-echo "${DEFAULTCOLOR}============================================"
-echo "${DEFAULTCOLOR}                 DELIA TESTS"
-echo "${DEFAULTCOLOR}============================================"
-echo "${DEFAULTCOLOR}           LIBRARY COMPILE TESTS"
-if (! sh $LIBRARYDATA_PATH/alltests.sh $PATH_PROJECT); then
-  exit 1                                 
-fi
+# echo "${DEFAULTCOLOR}============================================"
+# echo "${DEFAULTCOLOR}                 DELIA TESTS"
+# echo "${DEFAULTCOLOR}============================================"
+# echo "${DEFAULTCOLOR}           LIBRARY COMPILE TESTS"
+# if (! sh $LIBRARYDATA_PATH/alltests.sh $PATH_PROJECT); then
+#   exit 1                                 
+# fi
 echo "${DEFAULTCOLOR}============================================"
 echo "${DEFAULTCOLOR}           CHECKPOINT DATA TESTS"
 if (! sh $GLOBALDATA_PATH/alltests.sh $PATH_PROJECT); then

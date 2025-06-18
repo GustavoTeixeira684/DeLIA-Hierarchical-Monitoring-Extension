@@ -22,10 +22,10 @@ TEST_LOCAL="TEST_LOCAL"
 
 if [ "$TYPE_TEST" = "$TEST_LOCAL" ]; then
     echo "LOCAL TEST WITH FAIL"
-    mpirun -n 4 $PASSINGINTERFACESGL_PATH/bin/EXEC_TEST 10 "wo_trigger.json" >$FILE_OUTPUT 2>$FILE_ERROUTPUT &
+    mpirun -n 10 --oversubscribe $PASSINGINTERFACESGL_PATH/bin/EXEC_TEST 10 "wo_trigger.json" >$FILE_OUTPUT 2>$FILE_ERROUTPUT &
 else
     echo "CI TEST"
-    mpirun --allow-run-as-root -n 4 $PASSINGINTERFACESGL_PATH/bin/EXEC_TEST 10 "wo_trigger.json" >$FILE_OUTPUT 2>$FILE_ERROUTPUT &
+    mpirun --allow-run-as-root -n 10 --oversubscribe $PASSINGINTERFACESGL_PATH/bin/EXEC_TEST 10 "wo_trigger.json" >$FILE_OUTPUT 2>$FILE_ERROUTPUT &
 fi
 sleep 5;
 STATERUN=$(ps -C EXEC_TEST)
@@ -62,6 +62,55 @@ then
     echo "${HITCOLOR}NODE_3_OK"
 else
     echo "${ERRORCOLOR}NODE_3_ERR" 1>&2
+    exit 125
+fi
+
+TRIGGER_RECEIVED="OBSERVED_NODE_4_RECEIVES_TRIGGER"
+if $(grep -q $TRIGGER_RECEIVED $FILE_ERROUTPUT)
+then
+    echo "${HITCOLOR}NODE_4_OK"
+else
+    echo "${ERRORCOLOR}NODE_4_ERR" 1>&2
+    exit 125
+fi
+TRIGGER_RECEIVED="OBSERVED_NODE_5_RECEIVES_TRIGGER"
+if $(grep -q $TRIGGER_RECEIVED $FILE_ERROUTPUT)
+then
+    echo "${HITCOLOR}NODE_5_OK"
+else
+    echo "${ERRORCOLOR}NODE_5_ERR" 1>&2
+    exit 125
+fi
+TRIGGER_RECEIVED="OBSERVED_NODE_6_RECEIVES_TRIGGER"
+if $(grep -q $TRIGGER_RECEIVED $FILE_ERROUTPUT)
+then
+    echo "${HITCOLOR}NODE_6_OK"
+else
+    echo "${ERRORCOLOR}NODE_6_ERR" 1>&2
+    exit 125
+fi
+TRIGGER_RECEIVED="OBSERVED_NODE_7_RECEIVES_TRIGGER"
+if $(grep -q $TRIGGER_RECEIVED $FILE_ERROUTPUT)
+then
+    echo "${HITCOLOR}NODE_7_OK"
+else
+    echo "${ERRORCOLOR}NODE_7_ERR" 1>&2
+    exit 125
+fi
+TRIGGER_RECEIVED="OBSERVED_NODE_8_RECEIVES_TRIGGER"
+if $(grep -q $TRIGGER_RECEIVED $FILE_ERROUTPUT)
+then
+    echo "${HITCOLOR}NODE_8_OK"
+else
+    echo "${ERRORCOLOR}NODE_8_ERR" 1>&2
+    exit 125
+fi
+TRIGGER_RECEIVED="OBSERVED_NODE_9_RECEIVES_TRIGGER"
+if $(grep -q $TRIGGER_RECEIVED $FILE_ERROUTPUT)
+then
+    echo "${HITCOLOR}NODE_9_OK"
+else
+    echo "${ERRORCOLOR}NODE_9_ERR" 1>&2
     exit 125
 fi
 
